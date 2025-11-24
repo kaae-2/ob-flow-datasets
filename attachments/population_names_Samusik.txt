@@ -1,0 +1,25 @@
+population name
+1 B-cell Frac A-C (pro-B cells)
+2 Basophils
+3 CD4 T cells
+4 CD8 T cells
+5 Classical Monocytes
+6 CLP
+7 CMP
+8 Eosinophils
+9 gd T cells
+10 GMP
+11 HSC
+12 IgD- IgMpos B cells
+13 IgDpos IgMpos B cells
+14 IgM- IgD- B-cells
+15 Intermediate Monocytes
+16 Macrophages
+17 mDCs
+18 MEP
+19 MPP
+20 NK cells
+21 NKT cells
+22 Non-Classical Monocytes
+23 pDCs
+24 Plasma Cells

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gating:Gating-ML xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations" xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes" xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://flowcyt.sourceforge.net/gating/2.0/xsd/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://flowcyt.sourceforge.net/gating/2.0/xsd/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://flowcyt.sourceforge.net/gating/2.0/xsd/DataTypes.v2.0.xsd">
+  <data-type:custom_info>
+    <cytobank>
+      <about>Gating-ML 2.0 export of Cytobank experiment number 49370.</about>
+      <experiment_number>49370</experiment_number>
+      <experiment_title>Mosmann_rare_15_gating</experiment_title>
+      <experiment_url>https://www.cytobank.org/cytobank/experiments/49370</experiment_url>
+      <export_timestamp>2015-11-09T12:56:40.308-08:00</export_timestamp>
+    </cytobank>
+  </data-type:custom_info>
+  <gating:RectangleGate gating:id="Gate_2720062_U2luZ2xlIGNlbGxz">
+    <data-type:custom_info>
+      <cytobank>
+        <name>Single cells</name>
+        <id>2720062</id>
+        <gate_id>1</gate_id>
+        <type>RectangleGate</type>
+        <version>7</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":1,"argument":"1","min":1.0,"max":262144.0,"bins":256,"size":256},"y":{"flag":1,"argument":"1","min":1.0,"max":262144.0,"bins":256,"size":256}},"positive":false,"negative":false,"label":[91702.02470439191,119895.86046511628],"rectangle":{"x1":41095.26794763513,"y1":27434.56976744186,"x2":120041.80848817567,"y2":97542.58139534884}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="41095.26794763513" gating:max="120041.80848817567">
+      <data-type:fcs-dimension data-type:name="FSC-A" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="27434.56976744186" gating:max="97542.58139534884">
+      <data-type:fcs-dimension data-type:name="SSC-A" />
+    </gating:dimension>
+  </gating:RectangleGate>
+  <transforms:transformation transforms:id="Tr_Arcsinh_150">
+    <transforms:fasinh transforms:T="176.2801790465702" transforms:M="0.43429448190325176" transforms:A="0.0" />
+  </transforms:transformation>
+  <gating:RectangleGate gating:id="Gate_2720063_TGl2ZSBjZWxscw..">
+    <data-type:custom_info>
+      <cytobank>
+        <name>Live cells</name>
+        <id>2720063</id>
+        <gate_id>2</gate_id>
+        <type>RectangleGate</type>
+        <version>7</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":1,"argument":"1","min":1.0,"max":262144.0,"bins":256,"size":256},"y":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256}},"positive":false,"negative":false,"label":[32998.18686655405,3.0581628905175475],"rectangle":{"x1":70447.1868665541,"y1":-1.6436268725715388,"x2":85629.2138935811,"y2":4.544105881682494}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="70447.1868665541" gating:max="85629.2138935811">
+      <data-type:fcs-dimension data-type:name="FSC-W" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="-1.6436268725715388" gating:max="4.544105881682494" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Violet G 550/40-A" />
+    </gating:dimension>
+  </gating:RectangleGate>
+  <gating:RectangleGate gating:id="Gate_2720064_Q0QzIHZzIENEMTQ.">
+    <data-type:custom_info>
+      <cytobank>
+        <name>CD3 vs CD14</name>
+        <id>2720064</id>
+        <gate_id>3</gate_id>
+        <type>RectangleGate</type>
+        <version>7</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256},"y":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256}},"positive":false,"negative":false,"label":[3.6788462573304153,4.965492700072554],"rectangle":{"x1":-2.860570232572465,"y1":1.1508330809625416,"x2":2.3974741072818797,"y2":4.477571120884065}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="-2.860570232572465" gating:max="2.3974741072818797" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Violet A 780/60-A" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="1.1508330809625416" gating:max="4.477571120884065" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Violet D 605/40-A" />
+    </gating:dimension>
+  </gating:RectangleGate>
+  <gating:RectangleGate gating:id="Gate_2720065_Q0Q0IHZzIENEOGE.">
+    <data-type:custom_info>
+      <cytobank>
+        <name>CD4 vs CD8a</name>
+        <id>2720065</id>
+        <gate_id>4</gate_id>
+        <type>RectangleGate</type>
+        <version>7</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256},"y":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256}},"positive":false,"negative":false,"label":[0.8068052313595566,5.6086620544573815],"rectangle":{"x1":-2.772199739465669,"y1":1.9714284641431834,"x2":2.2207331210682866,"y2":4.499749374483541}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="-2.772199739465669" gating:max="2.2207331210682866" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Violet B 705/70-A" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="1.9714284641431834" gating:max="4.499749374483541" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Green D 610/20-A" />
+    </gating:dimension>
+  </gating:RectangleGate>
+  <gating:RectangleGate gating:id="Gate_2720066_Q0Q2OSB2cyBDRDQ1UkE.">
+    <data-type:custom_info>
+      <cytobank>
+        <name>CD69 vs CD45RA</name>
+        <id>2720066</id>
+        <gate_id>5</gate_id>
+        <type>RectangleGate</type>
+        <version>7</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256},"y":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256}},"positive":false,"negative":false,"label":[1.3370281900003298,6.983713777624947],"rectangle":{"x1":-1.667568575630723,"y1":3.2577671729128395,"x2":2.1323626279614922,"y2":6.185296648043781}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="-1.667568575630723" gating:max="2.1323626279614922" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Violet C 660/40-A" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="3.2577671729128395" gating:max="6.185296648043781" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Red A 780/60-A" />
+    </gating:dimension>
+  </gating:RectangleGate>
+  <gating:RectangleGate gating:id="Gate_2720067_SUZOZyB2cyBUTkZh">
+    <data-type:custom_info>
+      <cytobank>
+        <name>IFNg vs TNFa</name>
+        <id>2720067</id>
+        <gate_id>9</gate_id>
+        <type>RectangleGate</type>
+        <version>7</version>
+        <compensation_id>-2</compensation_id>
+        <fcs_file_id />
+        <fcs_file_filename />
+        <definition>{"scale":{"x":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256},"y":{"flag":4,"argument":"150","min":-2000.0,"max":262144.0,"bins":256,"size":256}},"positive":false,"negative":false,"label":[1.6150104023026564,6.727575524079231],"rectangle":{"x1":3.2056792782249786,"y1":2.5518262135527343,"x2":8.11024164565214,"y2":7.038071074471905}}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="3.2056792782249786" gating:max="8.11024164565214" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Violet H 450/50-A" />
+    </gating:dimension>
+    <gating:dimension gating:compensation-ref="FCS" gating:min="2.5518262135527343" gating:max="7.038071074471905" gating:transformation-ref="Tr_Arcsinh_150">
+      <data-type:fcs-dimension data-type:name="Green A 780/40-A" />
+    </gating:dimension>
+  </gating:RectangleGate>
+  <gating:BooleanGate gating:id="GateSet_705340">
+    <data-type:custom_info>
+      <cytobank>
+        <name>Single cells</name>
+        <id>705340</id>
+        <gate_set_id>1</gate_set_id>
+        <version>7</version>
+        <definition>{"gates":[1],"negGates":[]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+      <!-- Boolean "and" gates are used to describe Cytobank's populations (gate sets). Here, we only have one gate defining the population, but Gating-ML requires at least two arguments for the "and" gate. Therefore, we are referencing the same gate twice. -->
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+    </gating:and>
+  </gating:BooleanGate>
+  <gating:BooleanGate gating:id="GateSet_705341">
+    <data-type:custom_info>
+      <cytobank>
+        <name>Live cells</name>
+        <id>705341</id>
+        <gate_set_id>2</gate_set_id>
+        <version>7</version>
+        <definition>{"gates":[1,2],"negGates":[]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+      <gating:gateReference gating:ref="Gate_2720063_TGl2ZSBjZWxscw.." />
+    </gating:and>
+  </gating:BooleanGate>
+  <gating:BooleanGate gating:id="GateSet_705342">
+    <data-type:custom_info>
+      <cytobank>
+        <name>CD3 vs CD14</name>
+        <id>705342</id>
+        <gate_set_id>3</gate_set_id>
+        <version>7</version>
+        <definition>{"gates":[1,2,3],"negGates":[]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+      <gating:gateReference gating:ref="Gate_2720063_TGl2ZSBjZWxscw.." />
+      <gating:gateReference gating:ref="Gate_2720064_Q0QzIHZzIENEMTQ." />
+    </gating:and>
+  </gating:BooleanGate>
+  <gating:BooleanGate gating:id="GateSet_705343">
+    <data-type:custom_info>
+      <cytobank>
+        <name>CD4 vs CD8a</name>
+        <id>705343</id>
+        <gate_set_id>4</gate_set_id>
+        <version>7</version>
+        <definition>{"gates":[1,2,3,4],"negGates":[]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+      <gating:gateReference gating:ref="Gate_2720063_TGl2ZSBjZWxscw.." />
+      <gating:gateReference gating:ref="Gate_2720064_Q0QzIHZzIENEMTQ." />
+      <gating:gateReference gating:ref="Gate_2720065_Q0Q0IHZzIENEOGE." />
+    </gating:and>
+  </gating:BooleanGate>
+  <gating:BooleanGate gating:id="GateSet_705344">
+    <data-type:custom_info>
+      <cytobank>
+        <name>CD69 vs CD45RA</name>
+        <id>705344</id>
+        <gate_set_id>5</gate_set_id>
+        <version>7</version>
+        <definition>{"gates":[1,2,3,4,5],"negGates":[]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+      <gating:gateReference gating:ref="Gate_2720063_TGl2ZSBjZWxscw.." />
+      <gating:gateReference gating:ref="Gate_2720064_Q0QzIHZzIENEMTQ." />
+      <gating:gateReference gating:ref="Gate_2720065_Q0Q0IHZzIENEOGE." />
+      <gating:gateReference gating:ref="Gate_2720066_Q0Q2OSB2cyBDRDQ1UkE." />
+    </gating:and>
+  </gating:BooleanGate>
+  <gating:BooleanGate gating:id="GateSet_705345">
+    <data-type:custom_info>
+      <cytobank>
+        <name>IFNg vs TNFa</name>
+        <id>705345</id>
+        <gate_set_id>10</gate_set_id>
+        <version>7</version>
+        <definition>{"gates":[1,2,3,4,5,9],"negGates":[]}</definition>
+      </cytobank>
+    </data-type:custom_info>
+    <gating:and>
+      <gating:gateReference gating:ref="Gate_2720062_U2luZ2xlIGNlbGxz" />
+      <gating:gateReference gating:ref="Gate_2720063_TGl2ZSBjZWxscw.." />
+      <gating:gateReference gating:ref="Gate_2720064_Q0QzIHZzIENEMTQ." />
+      <gating:gateReference gating:ref="Gate_2720065_Q0Q0IHZzIENEOGE." />
+      <gating:gateReference gating:ref="Gate_2720066_Q0Q2OSB2cyBDRDQ1UkE." />
+      <gating:gateReference gating:ref="Gate_2720067_SUZOZyB2cyBUTkZh" />
+    </gating:and>
+  </gating:BooleanGate>
+</gating:Gating-ML>
+
