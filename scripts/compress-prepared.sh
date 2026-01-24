@@ -5,7 +5,7 @@ set -euo pipefail
 # Creates .zst and .zst.sha256 files next to originals; keeps originals unchanged.
 
 NUM_JOBS=4
-LEVEL=22
+LEVEL=12
 FORCE=0
 MAX_MB=100
 SPLIT_MB=
@@ -18,7 +18,7 @@ Usage: ./scripts/compress-prepared.sh [--jobs N]
 
 Options:
   --jobs N    number of parallel compress jobs (default 4)
-  --level N   zstd compression level (default 22)
+  --level N   zstd compression level (default 12)
   --force     recompress and overwrite existing .zst files
   --max-mb N  fail if any .zst exceeds this size (default 100)
   --split-mb N  size of .zst parts when splitting (default: --max-mb)
@@ -51,7 +51,7 @@ if [ -z "$SPLIT_MB" ]; then
   SPLIT_MB=$MAX_MB
 fi
 
-echo "Compressing CSVs under $PREPARED_DIR with zstd --ultra -$LEVEL (jobs=$NUM_JOBS)"
+echo "Compressing CSVs under $PREPARED_DIR with zstd -$LEVEL (jobs=$NUM_JOBS)"
 
 export LEVEL FORCE MAX_MB SPLIT_MB
 
@@ -79,7 +79,7 @@ find "$PREPARED_DIR" -type f -name '*.csv' -print0 \
       rm -f "$f.zst.part"*
     fi
     echo "Compressing: $f"
-    zstd --ultra -"$LEVEL" -T0 -k -f --quiet "$f"
+    zstd -"$LEVEL" -T0 -k -f --quiet "$f"
     sha256sum "$f.zst" > "$f.zst.sha256"
     size_bytes=$(stat -c %s "$f.zst")
     max_bytes=$((MAX_MB * 1024 * 1024))
