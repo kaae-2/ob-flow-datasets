@@ -1,33 +1,32 @@
 # ob-flow-datasets
 
-Small repository re-exporting datasets from FlowRepository for use in the PhD course "Benchmarking of Bioinformatics Tools" (2025 cohort).
+Prepared datasets used by the benchmark pipeline.
 
-## Overview
+## Prepared layout contract
 
-This repository contains a local copy of datasets originally published on FlowRepository. The re-export is provided to simplify access and to avoid programmatic downloads directly from FlowRepository during course exercises and benchmarking workflows.
+Prepared files are organized as:
 
-## Source
+`prepared/<platform>/<dataset_name>/<shortname>/`
 
-Original datasets available at:
-http://flowrepository.org/experiments/817/download_ziped_files
+- `platform`: `cytof` or `fcm`
+- `dataset_name`: benchmark-facing dataset id (the value passed as `--dataset_name`)
+- `shortname`: compact cohort/abbreviation label (also exported in metadata)
 
-## Purpose
+Each `<shortname>` directory stores compressed sample files:
 
-- Provide an easily accessible mirror of the datasets for teaching and benchmarking.
-- Avoid repeated automated downloads from the primary repository during practical exercises.
+- `*.csv.zst`
+- matching checksum files `*.csv.zst.sha256`
 
-## Usage
+## Notes
 
-- Download or clone this repository and use the dataset files in your analysis pipelines.
-- This repo does not modify the original data beyond packaging for convenience.
+- The importer consumes only `.csv.zst` inputs under the layout above.
+- The importer verifies each `.csv.zst` against its `.sha256` before packaging.
+- Split part files (`.csv.zst.part*`) are not part of the active contract.
 
-## Course
+## Source and intent
 
-Part of the PhD course: "Benchmarking of Bioinformatics Tools" — 2025 cohort.
-
-## Contact
-
-For inquiries, contact the author of the repository (open an issue in this repository or use the contact information in the repository profile).
+- Datasets originate from FlowRepository exports and course-specific prepared variants.
+- This repository exists to provide stable, benchmark-ready inputs without repeated ad hoc downloads.
 
 ## License
 
