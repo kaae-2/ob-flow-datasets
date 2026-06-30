@@ -1,3 +1,5 @@
 \n# ignore raw prepared CSVs (we store compressed .zst archives)
 prepared/**/*.csv
 import/
+__pycache__/
+*.py[cod]
