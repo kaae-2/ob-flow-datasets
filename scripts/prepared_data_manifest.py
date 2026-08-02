@@ -14,10 +14,11 @@ import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
-from typing import BinaryIO, Callable, Iterator
+from typing import BinaryIO, Callable
 
 
 REPOSITORY_URL = 'https://github.com/kaae-2/ob-flow-datasets'
+RAW_REPOSITORY_URL = 'https://raw.githubusercontent.com/kaae-2/ob-flow-datasets'
 FULL_COMMIT_RE = re.compile(r'^[0-9a-f]{40}$')
 PART_RE = re.compile(r'^(?P<whole>.+\.csv\.zst)\.part(?P<number>[0-9]+)$')
 CHECKSUM_SUFFIX = '.csv.zst.sha256'
@@ -124,7 +125,7 @@ class GitHubSource:
         ]
 
     def open(self, path: str) -> BinaryIO:
-        url = f'{REPOSITORY_URL}/raw/{self.revision}/{path}'
+        url = f'{RAW_REPOSITORY_URL}/{self.revision}/{path}'
         return _urlopen_with_retries(url)
 
 
