@@ -9,10 +9,9 @@ FlowRepository downloads in `datasets/import/`.
 Currently supported:
 - FR-FCM-ZY34 / experiment 1124 FACS validation files using the Cytobank-style
   `Krieg_FACS_gatingstrategy.xml` gate tree.
-
-The FR-FCM-ZYVT / experiment 2045 FACSDiva path is probed but not materialized
-yet because the local FlowRepository file names do not resolve cleanly through
-the current `../phd` FACSDiva runtime exporter for arbitrary samples.
+- FR-FCM-ZYVT / experiment 2045 Berlin samples with paired Kaluza `.analysis`
+  workspaces and `.30.fcs` files. Other experiment 2045 laboratory exports are
+  probed but not materialized.
 """
 
 from __future__ import annotations
@@ -411,6 +410,8 @@ def keep_kaluza_marker(measurement: KaluzaMeasurement) -> bool:
         return False
     if not marker_l or marker_l in {"fl1", "fl2", "fl4", "fl5", "fl6", "fl8", "fl9", "fl10"}:
         return False
+    if canonical_kaluza_marker(measurement.marker) == "SYTO41":
+        return False
     return True
 
 
@@ -438,15 +439,42 @@ def evaluate_kaluza_gate(gate: KaluzaGate, gate_df: pd.DataFrame) -> np.ndarray:
     return points_in_polygon(x, y, gate.points)
 
 
-def label_kaluza_events(gate_df: pd.DataFrame, gates: list[KaluzaGate]) -> pd.Series:
+def label_kaluza_events_with_audit(
+    gate_df: pd.DataFrame, gates: list[KaluzaGate]
+) -> tuple[pd.Series, dict[str, object]]:
     labels = pd.Series(["unlabeled"] * len(gate_df), index=gate_df.index, dtype="object")
     masks: dict[str, np.ndarray] = {}
     for gate in gates:
+        if gate.parent is not None and gate.parent not in masks:
+            raise ValueError(f"Kaluza gate {gate.name!r} has unresolved parent {gate.parent!r}")
         parent_mask = masks.get(gate.parent, np.ones(len(gate_df), dtype=bool))
         mask = parent_mask & evaluate_kaluza_gate(gate, gate_df)
         masks[gate.name] = mask
-        labels.iloc[np.flatnonzero(mask)] = gate.name
-    return labels.rename("label")
+
+    parent_names = {gate.parent for gate in gates if gate.parent is not None}
+    terminal_names = [gate.name for gate in gates if gate.name not in parent_names]
+    membership_count = np.zeros(len(gate_df), dtype=np.uint8)
+    for name in terminal_names:
+        membership_count += masks[name]
+    for name in terminal_names:
+        exclusive_mask = masks[name] & (membership_count == 1)
+        labels.iloc[np.flatnonzero(exclusive_mask)] = name
+    labels = labels.rename("label")
+    return labels, {
+        "target_gates": terminal_names,
+        "target_mask_counts": {name: int(masks[name].sum()) for name in terminal_names},
+        "exclusive_target_counts": {
+            name: int((masks[name] & (membership_count == 1)).sum())
+            for name in terminal_names
+        },
+        "ambiguous_terminal_memberships": int((membership_count > 1).sum()),
+        "unlabeled_count": int((labels == "unlabeled").sum()),
+    }
+
+
+def label_kaluza_events(gate_df: pd.DataFrame, gates: list[KaluzaGate]) -> pd.Series:
+    labels, _audit = label_kaluza_events_with_audit(gate_df, gates)
+    return labels
 
 
 def label_events(gate_df: pd.DataFrame, populations: list[Population]) -> pd.Series:
@@ -567,8 +595,8 @@ def prepare_2045_kaluza(input_dir: Path, output_dir: Path, limit: int | None) ->
             if not gates:
                 skipped.append({"analysis": analysis_path.name, "reason": "no parsed Kaluza gates"})
                 continue
-            gate_df, marker_df, _measurements = load_kaluza_sample(fcs_path, root)
-            labels = label_kaluza_events(gate_df, gates)
+            gate_df, marker_df, measurements = load_kaluza_sample(fcs_path, root)
+            labels, label_audit = label_kaluza_events_with_audit(gate_df, gates)
             out_df = marker_df.copy()
             out_df["label"] = labels.to_numpy()
             output_path = output_dir / f"{fcs_path.stem}_annotated.csv"
@@ -580,8 +608,20 @@ def prepare_2045_kaluza(input_dir: Path, output_dir: Path, limit: int | None) ->
                     "output": str(output_path),
                     "rows": int(len(out_df)),
                     "columns": list(out_df.columns),
-                    "gates": [gate.name for gate in gates],
+                    "gate_hierarchy": [
+                        {"parent": gate.parent, "name": gate.name} for gate in gates
+                    ],
+                    "model_features": list(marker_df.columns),
+                    "gating_only_measurements": sorted(
+                        {
+                            canonical_kaluza_marker(measurement.marker)
+                            for measurement in measurements.values()
+                            if not keep_kaluza_marker(measurement)
+                            and canonical_kaluza_marker(measurement.marker) == "SYTO41"
+                        }
+                    ),
                     "labels": sorted(set(labels.astype(str))),
+                    **label_audit,
                 }
             )
             print(f"[2045-kaluza] {index}/{len(analysis_paths)} wrote {output_path} rows={len(out_df)}")
