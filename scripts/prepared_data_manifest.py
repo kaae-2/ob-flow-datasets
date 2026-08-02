@@ -9,6 +9,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -22,6 +23,7 @@ PART_RE = re.compile(r'^(?P<whole>.+\.csv\.zst)\.part(?P<number>[0-9]+)$')
 CHECKSUM_SUFFIX = '.csv.zst.sha256'
 WHOLE_SUFFIX = '.csv.zst'
 READ_CHUNK_SIZE = 8 * 1024 * 1024
+DOWNLOAD_RETRIES = 4
 
 
 class ContractError(ValueError):
@@ -109,7 +111,7 @@ class GitHubSource:
             'https://api.github.com/repos/kaae-2/ob-flow-datasets/git/trees/'
             f'{self.revision}?recursive=1'
         )
-        with urllib.request.urlopen(url) as response:
+        with _urlopen_with_retries(url) as response:
             payload = json.load(response)
         if payload.get('truncated'):
             raise ContractError('GitHub returned a truncated prepared-data tree')
@@ -123,7 +125,21 @@ class GitHubSource:
 
     def open(self, path: str) -> BinaryIO:
         url = f'{REPOSITORY_URL}/raw/{self.revision}/{path}'
-        return urllib.request.urlopen(url)
+        return _urlopen_with_retries(url)
+
+
+def _urlopen_with_retries(url: str) -> BinaryIO:
+    for attempt in range(1, DOWNLOAD_RETRIES + 1):
+        try:
+            return urllib.request.urlopen(url)
+        except urllib.error.HTTPError as exc:
+            if exc.code not in {429, 500, 502, 503, 504} or attempt == DOWNLOAD_RETRIES:
+                raise
+        except urllib.error.URLError:
+            if attempt == DOWNLOAD_RETRIES:
+                raise
+        time.sleep(2 ** (attempt - 1))
+    raise RuntimeError(f'Could not read {url}')
 
 
 def require_full_revision(revision: str) -> str:
