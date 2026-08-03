@@ -688,6 +688,49 @@ def probe_2045(input_dir: Path, phd_root: Path) -> dict[str, object]:
     }
 
 
+def public_kaluza_audit(
+    report: dict[str, object], limit: int | None
+) -> dict[str, object]:
+    if limit is not None:
+        raise ValueError(
+            "cannot publish FR-FCM-ZYVT source-mask audit from a limited run"
+        )
+    skipped = report.get("skipped", [])
+    if skipped:
+        raise ValueError("cannot publish FR-FCM-ZYVT source-mask audit with skipped samples")
+
+    written = []
+    for record in report.get("written", []):
+        public_record = {
+            key: value for key, value in record.items() if key != "output"
+        }
+        sample_stem = Path(str(public_record["sample"])).stem
+        public_record["artifact"] = (
+            f"PediatricBALL_fcm/{sample_stem}_annotated.csv.zst"
+        )
+        written.append(public_record)
+
+    written.sort(key=lambda record: str(record["sample"]))
+    return {
+        "schema_version": 1,
+        "dataset": report["dataset"],
+        "source": report["source"],
+        "written": written,
+        "skipped": [],
+    }
+
+
+def write_public_kaluza_audit(
+    report: dict[str, object], path: Path, limit: int | None
+) -> None:
+    payload = public_kaluza_audit(report, limit)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", choices=["FR-FCM-ZY34", "FR-FCM-ZYVT", "all"], default="all")
@@ -708,13 +751,18 @@ def main() -> None:
             )
         )
     if args.dataset in {"FR-FCM-ZYVT", "all"}:
-        reports.append(
-            prepare_2045_kaluza(
-                args.import_root / "2045",
-                args.prepared_root / "FR-FCM-ZYVT" / "PediatricBALL_fcm",
+        kaluza_report = prepare_2045_kaluza(
+            args.import_root / "2045",
+            args.prepared_root / "FR-FCM-ZYVT" / "PediatricBALL_fcm",
+            args.limit,
+        )
+        reports.append(kaluza_report)
+        if args.limit is None:
+            write_public_kaluza_audit(
+                kaluza_report,
+                args.prepared_root / "FR-FCM-ZYVT" / "source-mask-audit.json",
                 args.limit,
             )
-        )
         reports.append(probe_2045(args.import_root / "2045", args.phd_root))
 
     report_path = args.report_root / "flowrepository-gated-prep-report.json"

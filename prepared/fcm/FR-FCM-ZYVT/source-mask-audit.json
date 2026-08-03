@@ -1,0 +1,7205 @@
+{
+  "dataset": "FR-FCM-ZYVT",
+  "schema_version": 1,
+  "skipped": [],
+  "source": "Kaluza .analysis Bln subset",
+  "written": [
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln001_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln001.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 1376,
+        "mature B-cells": 9979,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 45203,
+      "sample": "Bln001.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 1376,
+        "mature B-cells": 9979,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 33848
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln004_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln004.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 131,
+        "Erythroblasts": 1458,
+        "mature B-cells": 33061,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 117626,
+      "sample": "Bln004.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 131,
+        "Erythroblasts": 1458,
+        "mature B-cells": 33061,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 82976
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln005_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln005.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 1216,
+        "mature B-cells": 2222,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 51268,
+      "sample": "Bln005.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 1216,
+        "mature B-cells": 2222,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 47829
+    },
+    {
+      "ambiguous_terminal_memberships": 54,
+      "analysis": "Bln006_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln006.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 13706,
+        "Erythroblasts": 524,
+        "mature B-cells": 22886,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 300000,
+      "sample": "Bln006.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 13760,
+        "Erythroblasts": 524,
+        "mature B-cells": 22940,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 262884
+    },
+    {
+      "ambiguous_terminal_memberships": 72,
+      "analysis": "Bln007_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln007.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 2598,
+        "Erythroblasts": 55385,
+        "mature B-cells": 44033,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln007.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 2670,
+        "Erythroblasts": 55385,
+        "mature B-cells": 44105,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 397984
+    },
+    {
+      "ambiguous_terminal_memberships": 27,
+      "analysis": "Bln008_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln008.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1166,
+        "Erythroblasts": 3924,
+        "mature B-cells": 5506,
+        "plasmacells": 1
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 68228,
+      "sample": "Bln008.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1166,
+        "Erythroblasts": 3924,
+        "mature B-cells": 5533,
+        "plasmacells": 28
+      },
+      "unlabeled_count": 57631
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln009_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln009.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 3,
+        "Erythroblasts": 1400,
+        "mature B-cells": 9963,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 221859,
+      "sample": "Bln009.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 3,
+        "Erythroblasts": 1400,
+        "mature B-cells": 9963,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 210493
+    },
+    {
+      "ambiguous_terminal_memberships": 74,
+      "analysis": "Bln010_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln010.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 475,
+        "Erythroblasts": 49601,
+        "mature B-cells": 9205,
+        "plasmacells": 1
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln010.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 549,
+        "Erythroblasts": 49601,
+        "mature B-cells": 9279,
+        "plasmacells": 1
+      },
+      "unlabeled_count": 440718
+    },
+    {
+      "ambiguous_terminal_memberships": 96,
+      "analysis": "Bln013_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln013.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 9,
+        "Erythroblasts": 2837,
+        "mature B-cells": 105663,
+        "plasmacells": 2
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln013.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 9,
+        "Erythroblasts": 2837,
+        "mature B-cells": 105759,
+        "plasmacells": 98
+      },
+      "unlabeled_count": 391489
+    },
+    {
+      "ambiguous_terminal_memberships": 3,
+      "analysis": "Bln017_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln017.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 12,
+        "Erythroblasts": 26582,
+        "mature B-cells": 48532,
+        "plasmacells": 2
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 352446,
+      "sample": "Bln017.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 12,
+        "Erythroblasts": 26582,
+        "mature B-cells": 48535,
+        "plasmacells": 5
+      },
+      "unlabeled_count": 277318
+    },
+    {
+      "ambiguous_terminal_memberships": 1,
+      "analysis": "Bln018_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln018.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 350,
+        "mature B-cells": 11734,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 235971,
+      "sample": "Bln018.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 350,
+        "mature B-cells": 11735,
+        "plasmacells": 1
+      },
+      "unlabeled_count": 223886
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln019_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln019.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 9,
+        "Erythroblasts": 74823,
+        "mature B-cells": 68424,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 338015,
+      "sample": "Bln019.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 9,
+        "Erythroblasts": 74823,
+        "mature B-cells": 68424,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 194759
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln020_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln020.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 7,
+        "Erythroblasts": 13022,
+        "mature B-cells": 37338,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 247614,
+      "sample": "Bln020.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 7,
+        "Erythroblasts": 13022,
+        "mature B-cells": 37338,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 197247
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln022_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln022.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 56,
+        "mature B-cells": 58198,
+        "plasmacells": 1
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 448211,
+      "sample": "Bln022.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 56,
+        "mature B-cells": 58198,
+        "plasmacells": 1
+      },
+      "unlabeled_count": 389956
+    },
+    {
+      "ambiguous_terminal_memberships": 25,
+      "analysis": "Bln023_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln023.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1674,
+        "Erythroblasts": 5020,
+        "mature B-cells": 219165,
+        "plasmacells": 1
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln023.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1699,
+        "Erythroblasts": 5020,
+        "mature B-cells": 219190,
+        "plasmacells": 1
+      },
+      "unlabeled_count": 274140
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln024_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln024.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 1000,
+        "mature B-cells": 60729,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln024.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 1000,
+        "mature B-cells": 60729,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 438271
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln025_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln025.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 127,
+        "Erythroblasts": 3780,
+        "mature B-cells": 9323,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln025.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 127,
+        "Erythroblasts": 3780,
+        "mature B-cells": 9323,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 486770
+    },
+    {
+      "ambiguous_terminal_memberships": 4,
+      "analysis": "Bln027_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln027.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 10,
+        "Erythroblasts": 79,
+        "mature B-cells": 18522,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 112323,
+      "sample": "Bln027.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 11,
+        "Erythroblasts": 79,
+        "mature B-cells": 18526,
+        "plasmacells": 3
+      },
+      "unlabeled_count": 93712
+    },
+    {
+      "ambiguous_terminal_memberships": 1,
+      "analysis": "Bln028_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln028.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 122,
+        "Erythroblasts": 49232,
+        "mature B-cells": 26324,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 416468,
+      "sample": "Bln028.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 122,
+        "Erythroblasts": 49232,
+        "mature B-cells": 26325,
+        "plasmacells": 1
+      },
+      "unlabeled_count": 340790
+    },
+    {
+      "ambiguous_terminal_memberships": 1,
+      "analysis": "Bln029_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln029.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 20,
+        "Erythroblasts": 13230,
+        "mature B-cells": 92223,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln029.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 20,
+        "Erythroblasts": 13231,
+        "mature B-cells": 92224,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 394527
+    },
+    {
+      "ambiguous_terminal_memberships": 12,
+      "analysis": "Bln030_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln030.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 17,
+        "Erythroblasts": 54342,
+        "mature B-cells": 27216,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln030.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 29,
+        "Erythroblasts": 54342,
+        "mature B-cells": 27228,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 418425
+    },
+    {
+      "ambiguous_terminal_memberships": 1,
+      "analysis": "Bln031_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln031.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 121,
+        "Erythroblasts": 2299,
+        "mature B-cells": 28205,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 346363,
+      "sample": "Bln031.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 122,
+        "Erythroblasts": 2300,
+        "mature B-cells": 28205,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 315738
+    },
+    {
+      "ambiguous_terminal_memberships": 95,
+      "analysis": "Bln032_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln032.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 367,
+        "Erythroblasts": 6,
+        "mature B-cells": 17958,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 255929,
+      "sample": "Bln032.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 462,
+        "Erythroblasts": 6,
+        "mature B-cells": 18053,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 237598
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln033_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln033.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 21,
+        "mature B-cells": 15362,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 166889,
+      "sample": "Bln033.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 21,
+        "mature B-cells": 15362,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 151506
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln034_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln034.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 4,
+        "Erythroblasts": 29277,
+        "mature B-cells": 51710,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln034.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 4,
+        "Erythroblasts": 29277,
+        "mature B-cells": 51710,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 419009
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln035_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln035.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 31,
+        "Erythroblasts": 11978,
+        "mature B-cells": 8008,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 384280,
+      "sample": "Bln035.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 31,
+        "Erythroblasts": 11978,
+        "mature B-cells": 8008,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 364263
+    },
+    {
+      "ambiguous_terminal_memberships": 12,
+      "analysis": "Bln036_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln036.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1893,
+        "Erythroblasts": 57171,
+        "mature B-cells": 50559,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln036.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1905,
+        "Erythroblasts": 57171,
+        "mature B-cells": 50571,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 390377
+    },
+    {
+      "ambiguous_terminal_memberships": 153,
+      "analysis": "Bln037_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln037.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 25840,
+        "Erythroblasts": 33833,
+        "mature B-cells": 42508,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln037.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 25993,
+        "Erythroblasts": 33833,
+        "mature B-cells": 42661,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 397819
+    },
+    {
+      "ambiguous_terminal_memberships": 25,
+      "analysis": "Bln038_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln038.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 51,
+        "Erythroblasts": 1077,
+        "mature B-cells": 28227,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 481406,
+      "sample": "Bln038.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 76,
+        "Erythroblasts": 1077,
+        "mature B-cells": 28252,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 452051
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln039_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln039.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 66423,
+        "mature B-cells": 44635,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln039.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 66423,
+        "mature B-cells": 44635,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 388941
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln040_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln040.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 16,
+        "Erythroblasts": 848,
+        "mature B-cells": 22813,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 191106,
+      "sample": "Bln040.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 16,
+        "Erythroblasts": 848,
+        "mature B-cells": 22813,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 167429
+    },
+    {
+      "ambiguous_terminal_memberships": 7,
+      "analysis": "Bln041_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln041.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 7767,
+        "Erythroblasts": 382,
+        "mature B-cells": 18250,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 231251,
+      "sample": "Bln041.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 7774,
+        "Erythroblasts": 382,
+        "mature B-cells": 18257,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 204852
+    },
+    {
+      "ambiguous_terminal_memberships": 581,
+      "analysis": "Bln042_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln042.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 84119,
+        "Erythroblasts": 11169,
+        "mature B-cells": 989,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln042.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 84700,
+        "Erythroblasts": 11183,
+        "mature B-cells": 1556,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 403723
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln043_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln043.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 3476,
+        "mature B-cells": 77980,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln043.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 3476,
+        "mature B-cells": 77980,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 418544
+    },
+    {
+      "ambiguous_terminal_memberships": 856,
+      "analysis": "Bln044_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln044.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 239,
+        "Erythroblasts": 7702,
+        "mature B-cells": 37463,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 338514,
+      "sample": "Bln044.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1095,
+        "Erythroblasts": 7702,
+        "mature B-cells": 38319,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 293110
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln045_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln045.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 79,
+        "mature B-cells": 35666,
+        "plasmacells": 1
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 153851,
+      "sample": "Bln045.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 79,
+        "mature B-cells": 35666,
+        "plasmacells": 1
+      },
+      "unlabeled_count": 118104
+    },
+    {
+      "ambiguous_terminal_memberships": 15,
+      "analysis": "Bln046_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln046.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 8168,
+        "mature B-cells": 69456,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln046.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 16,
+        "Erythroblasts": 8168,
+        "mature B-cells": 69471,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 422375
+    },
+    {
+      "ambiguous_terminal_memberships": 2,
+      "analysis": "Bln047_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln047.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 16314,
+        "mature B-cells": 47071,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 480545,
+      "sample": "Bln047.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 3,
+        "Erythroblasts": 16314,
+        "mature B-cells": 47073,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 417159
+    },
+    {
+      "ambiguous_terminal_memberships": 1,
+      "analysis": "Bln049_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln049.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 6,
+        "Erythroblasts": 23,
+        "mature B-cells": 5823,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 203837,
+      "sample": "Bln049.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 7,
+        "Erythroblasts": 23,
+        "mature B-cells": 5824,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 197985
+    },
+    {
+      "ambiguous_terminal_memberships": 54,
+      "analysis": "Bln050_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln050.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 12777,
+        "Erythroblasts": 1194,
+        "mature B-cells": 11996,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 378966,
+      "sample": "Bln050.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 12831,
+        "Erythroblasts": 1194,
+        "mature B-cells": 12050,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 352999
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln051_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln051.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 14166,
+        "mature B-cells": 7084,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 184942,
+      "sample": "Bln051.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 14166,
+        "mature B-cells": 7084,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 163692
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln052_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln052.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 16941,
+        "mature B-cells": 24051,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 312029,
+      "sample": "Bln052.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 16941,
+        "mature B-cells": 24051,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 271037
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln053_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln053.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 4,
+        "Erythroblasts": 5417,
+        "mature B-cells": 9906,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 193579,
+      "sample": "Bln053.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 4,
+        "Erythroblasts": 5417,
+        "mature B-cells": 9906,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 178252
+    },
+    {
+      "ambiguous_terminal_memberships": 20,
+      "analysis": "Bln054_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln054.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 621,
+        "Erythroblasts": 5207,
+        "mature B-cells": 40673,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 362356,
+      "sample": "Bln054.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 641,
+        "Erythroblasts": 5207,
+        "mature B-cells": 40693,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 315855
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln056_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln056.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 4317,
+        "mature B-cells": 19968,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln056.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 4317,
+        "mature B-cells": 19968,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 475715
+    },
+    {
+      "ambiguous_terminal_memberships": 1,
+      "analysis": "Bln057_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln057.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 10,
+        "Erythroblasts": 3859,
+        "mature B-cells": 7775,
+        "plasmacells": 48
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln057.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 11,
+        "Erythroblasts": 3859,
+        "mature B-cells": 7775,
+        "plasmacells": 49
+      },
+      "unlabeled_count": 488308
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln058_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln058.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 1969,
+        "mature B-cells": 81133,
+        "plasmacells": 4
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln058.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 1969,
+        "mature B-cells": 81133,
+        "plasmacells": 4
+      },
+      "unlabeled_count": 416894
+    },
+    {
+      "ambiguous_terminal_memberships": 8,
+      "analysis": "Bln059_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln059.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 8884,
+        "Erythroblasts": 7249,
+        "mature B-cells": 45590,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 439134,
+      "sample": "Bln059.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 8892,
+        "Erythroblasts": 7249,
+        "mature B-cells": 45598,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 377411
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln060_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln060.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 2,
+        "Erythroblasts": 9487,
+        "mature B-cells": 6927,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 371097,
+      "sample": "Bln060.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 2,
+        "Erythroblasts": 9487,
+        "mature B-cells": 6927,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 354681
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln061_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln061.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 3,
+        "Erythroblasts": 5516,
+        "mature B-cells": 44748,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln061.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 3,
+        "Erythroblasts": 5516,
+        "mature B-cells": 44748,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 449733
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln062_d15_tubeB8_.analysis",
+      "artifact": "PediatricBALL_fcm/Bln062.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 314,
+        "mature B-cells": 1037,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 473139,
+      "sample": "Bln062.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 314,
+        "mature B-cells": 1037,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 471788
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln064_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln064.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 843,
+        "mature B-cells": 16282,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 425155,
+      "sample": "Bln064.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 843,
+        "mature B-cells": 16282,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 408030
+    },
+    {
+      "ambiguous_terminal_memberships": 4,
+      "analysis": "Bln065_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln065.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 34,
+        "Erythroblasts": 816,
+        "mature B-cells": 23354,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 280437,
+      "sample": "Bln065.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 38,
+        "Erythroblasts": 816,
+        "mature B-cells": 23358,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 256233
+    },
+    {
+      "ambiguous_terminal_memberships": 25,
+      "analysis": "Bln066_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln066.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 4002,
+        "Erythroblasts": 85988,
+        "mature B-cells": 15181,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 382924,
+      "sample": "Bln066.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 4027,
+        "Erythroblasts": 85989,
+        "mature B-cells": 15205,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 277753
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln067_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln067.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 61,
+        "Erythroblasts": 1787,
+        "mature B-cells": 43013,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 381311,
+      "sample": "Bln067.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 61,
+        "Erythroblasts": 1787,
+        "mature B-cells": 43013,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 336450
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln068_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln068.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 18656,
+        "mature B-cells": 23029,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 369184,
+      "sample": "Bln068.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 18656,
+        "mature B-cells": 23029,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 327499
+    },
+    {
+      "ambiguous_terminal_memberships": 1694,
+      "analysis": "Bln070_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln070.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 383,
+        "Erythroblasts": 2290,
+        "mature B-cells": 15395,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln070.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "mature B-cells",
+        "Blasts",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 2077,
+        "Erythroblasts": 2290,
+        "mature B-cells": 17089,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 481932
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln071_d15tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln071.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 4,
+        "Erythroblasts": 1762,
+        "mature B-cells": 15711,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 202991,
+      "sample": "Bln071.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 4,
+        "Erythroblasts": 1762,
+        "mature B-cells": 15711,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 185514
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln072_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln072.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1991,
+        "Erythroblasts": 707,
+        "mature B-cells": 7825,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln072.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1991,
+        "Erythroblasts": 707,
+        "mature B-cells": 7825,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 489477
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln075_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln075.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 5585,
+        "mature B-cells": 15394,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln075.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 5585,
+        "mature B-cells": 15394,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 479020
+    },
+    {
+      "ambiguous_terminal_memberships": 56,
+      "analysis": "Bln076_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln076.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 22,
+        "Erythroblasts": 37157,
+        "mature B-cells": 32930,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 292145,
+      "sample": "Bln076.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 78,
+        "Erythroblasts": 37157,
+        "mature B-cells": 32986,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 222036
+    },
+    {
+      "ambiguous_terminal_memberships": 113,
+      "analysis": "Bln077_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln077.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 16,
+        "Erythroblasts": 4617,
+        "mature B-cells": 47167,
+        "plasmacells": 3
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "plasmacells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln077.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 129,
+        "Erythroblasts": 4617,
+        "mature B-cells": 47280,
+        "plasmacells": 3
+      },
+      "unlabeled_count": 448197
+    },
+    {
+      "ambiguous_terminal_memberships": 87,
+      "analysis": "Bln079_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln079.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 18,
+        "Erythroblasts": 2562,
+        "mature B-cells": 14407,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln079.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 105,
+        "Erythroblasts": 2562,
+        "mature B-cells": 14494,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 483013
+    },
+    {
+      "ambiguous_terminal_memberships": 14,
+      "analysis": "Bln080_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln080.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 29,
+        "Erythroblasts": 7104,
+        "mature B-cells": 78946,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 460079,
+      "sample": "Bln080.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 43,
+        "Erythroblasts": 7104,
+        "mature B-cells": 78960,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 374000
+    },
+    {
+      "ambiguous_terminal_memberships": 6,
+      "analysis": "Bln081_d15tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln081.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 26,
+        "Erythroblasts": 10893,
+        "mature B-cells": 63199,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 340795,
+      "sample": "Bln081.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 32,
+        "Erythroblasts": 10893,
+        "mature B-cells": 63205,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 266677
+    },
+    {
+      "ambiguous_terminal_memberships": 33,
+      "analysis": "Bln082_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln082.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 28,
+        "Erythroblasts": 2740,
+        "mature B-cells": 122013,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln082.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 61,
+        "Erythroblasts": 2740,
+        "mature B-cells": 122046,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 375219
+    },
+    {
+      "ambiguous_terminal_memberships": 6,
+      "analysis": "Bln083_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln083.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 35,
+        "Erythroblasts": 13529,
+        "mature B-cells": 66440,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 440390,
+      "sample": "Bln083.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 41,
+        "Erythroblasts": 13529,
+        "mature B-cells": 66446,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 360386
+    },
+    {
+      "ambiguous_terminal_memberships": 35,
+      "analysis": "Bln084_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln084.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 39,
+        "Erythroblasts": 40999,
+        "mature B-cells": 74893,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 500000,
+      "sample": "Bln084.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 74,
+        "Erythroblasts": 41000,
+        "mature B-cells": 74928,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 384069
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln085_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln085.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 7040,
+        "mature B-cells": 18541,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 301449,
+      "sample": "Bln085.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 0,
+        "Erythroblasts": 7040,
+        "mature B-cells": 18541,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 275868
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln086_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln086.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 156,
+        "Erythroblasts": 2251,
+        "mature B-cells": 3192,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 479952,
+      "sample": "Bln086.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 156,
+        "Erythroblasts": 2251,
+        "mature B-cells": 3192,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 474353
+    },
+    {
+      "ambiguous_terminal_memberships": 0,
+      "analysis": "Bln087_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln087.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 4814,
+        "mature B-cells": 38959,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 486368,
+      "sample": "Bln087.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 1,
+        "Erythroblasts": 4814,
+        "mature B-cells": 38959,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 442594
+    },
+    {
+      "ambiguous_terminal_memberships": 120,
+      "analysis": "Bln089_d15_tubeB8.analysis",
+      "artifact": "PediatricBALL_fcm/Bln089.30_annotated.csv.zst",
+      "columns": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45",
+        "label"
+      ],
+      "exclusive_target_counts": {
+        "Blasts": 34,
+        "Erythroblasts": 3676,
+        "mature B-cells": 18450,
+        "plasmacells": 0
+      },
+      "gate_hierarchy": [
+        {
+          "name": "Syto +",
+          "parent": null
+        },
+        {
+          "name": "time axis",
+          "parent": "Syto +"
+        },
+        {
+          "name": "singlets",
+          "parent": "time axis"
+        },
+        {
+          "name": "viable",
+          "parent": "singlets"
+        },
+        {
+          "name": "corrected",
+          "parent": "viable"
+        },
+        {
+          "name": "CD19+",
+          "parent": "corrected"
+        },
+        {
+          "name": "pre",
+          "parent": "corrected"
+        },
+        {
+          "name": "Erythroblasts",
+          "parent": "pre"
+        },
+        {
+          "name": "Blasts",
+          "parent": "CD19+"
+        },
+        {
+          "name": "mature B-cells",
+          "parent": "CD19+"
+        },
+        {
+          "name": "plasmacells",
+          "parent": "CD19+"
+        }
+      ],
+      "gating_only_measurements": [
+        "SYTO41"
+      ],
+      "labels": [
+        "Blasts",
+        "Erythroblasts",
+        "mature B-cells",
+        "unlabeled"
+      ],
+      "model_features": [
+        "CD58",
+        "CD10",
+        "CD34",
+        "CD19",
+        "CD38",
+        "CD20",
+        "CD45"
+      ],
+      "rows": 388200,
+      "sample": "Bln089.30.fcs",
+      "target_gates": [
+        "Erythroblasts",
+        "Blasts",
+        "mature B-cells",
+        "plasmacells"
+      ],
+      "target_mask_counts": {
+        "Blasts": 154,
+        "Erythroblasts": 3676,
+        "mature B-cells": 18570,
+        "plasmacells": 0
+      },
+      "unlabeled_count": 366040
+    }
+  ]
+}

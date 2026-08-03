@@ -45,8 +45,9 @@ prepared counts are:
 | plasmacells | 196 | 64 |
 | unlabeled | not applicable | 23,446,961 |
 
-All 27,135,825 source events are retained. The preparation report records the
-mask, exclusive, ambiguous, and unlabeled counts for each sample.
+All 27,135,825 source events are retained. The tracked
+`source-mask-audit.json` records the mask, exclusive, ambiguous, and unlabeled
+counts for each sample.
 
 ## Features
 
@@ -75,11 +76,13 @@ done
 )
 ```
 
-The local source inputs are under ignored `import/2045/`. The generated audit
-is `import/_reports/flowrepository-gated-prep-report.json`. Prepared CSVs are
-compressed with Zstandard level 12 and each `*.csv.zst.sha256` binds the exact
-archive bytes. The preparation was validated with Python 3.12, pandas 2.3.3,
-FlowKit 1.3.0, NumPy 2.4.1, and Zstandard CLI 1.5.7.
+The local source inputs are under ignored `import/2045/`. The portable,
+deterministic publication audit is tracked as `source-mask-audit.json`; the
+combined local diagnostic report remains under ignored `import/_reports/`.
+Prepared CSVs are compressed with Zstandard level 12 and each
+`*.csv.zst.sha256` binds the exact archive bytes. The preparation was validated
+with Python 3.12, pandas 2.3.3, FlowKit 1.3.0, NumPy 2.4.1, and Zstandard CLI
+1.5.7.
 
 No dataset license record is present in this repository; resolve reuse terms
 from FlowRepository before redistribution.
