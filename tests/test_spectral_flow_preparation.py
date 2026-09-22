@@ -40,6 +40,9 @@ class SpectralPreparationTests(unittest.TestCase):
                     for obj in sample["source_objects"]:
                         relative = Path(obj["path"])
                         self.assertFalse(relative.is_absolute())
+                        self.assertFalse(
+                            any(character.isspace() for character in str(relative))
+                        )
                         self.assertEqual(relative.parent.name, audit["shortname"])
                         with (directory / relative).open("rb") as stream:
                             self.assertEqual(
@@ -107,6 +110,10 @@ class SpectralPreparationTests(unittest.TestCase):
             self.assertEqual(report["output"]["rows"], 214345)
             self.assertEqual(
                 Path(report["output"]["csv"]).parent.name, entry["shortname"]
+            )
+            self.assertEqual(
+                Path(report["output"]["csv"]).name,
+                "E02_C57_M1_BFA_TS_WLSM_annotated.csv",
             )
             self.assertIn("NK1.1", report["output"]["markers"])
             self.assertNotIn("NKp46", report["output"]["markers"])

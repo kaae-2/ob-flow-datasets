@@ -55,6 +55,10 @@ def write_publication_audits(
             for source in output["source_objects"]:
                 path = Path(source["path"])
                 relative = path.resolve().relative_to(directory.resolve())
+                if any(character.isspace() for character in str(relative)):
+                    raise ValueError(
+                        f"Prepared object path must be URL-safe: {relative}"
+                    )
                 if (
                     relative.parent != Path(shortname)
                     or sha256(path) != source["sha256"]

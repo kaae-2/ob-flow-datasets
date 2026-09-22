@@ -249,6 +249,7 @@ def prepare_z7ch_sample(
     changed = any(row["difference"] for row in comparison)
     sample_reports = reports / entry["dataset_id"]
     stem = Path(name).stem
+    csv_name = f"{stem.replace(' ', '_')}_annotated.csv"
     record = {
         **entry,
         "sources": inputs,
@@ -267,7 +268,7 @@ def prepare_z7ch_sample(
         "count_comparison": comparison,
     }
     record["output"] = export_csv(
-        output / entry["dataset_id"] / entry["shortname"] / f"{stem}_annotated.csv",
+        output / entry["dataset_id"] / entry["shortname"] / csv_name,
         values,
         markers,
         labels,

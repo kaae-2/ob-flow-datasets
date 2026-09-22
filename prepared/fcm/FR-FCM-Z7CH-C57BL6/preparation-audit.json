@@ -618,14 +618,14 @@
           "relative_difference": -0.0034403669724770644
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E02 C57_M1_BFA_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E02_C57_M1_BFA_TS_WLSM_annotated.csv",
       "rows": 214345,
       "csv_sha256": "bc9512e3a409ff5e0c8bbaf3cf41a8591b40543152130ff11c9644c719539b45",
       "compressed_sha256": "a279574b6832c0bf4d976b2f91e6c33f282b7a9c42a05e897d80da91ae37e92f",
       "compressed_bytes": 17224025,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/E02 C57_M1_BFA_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/E02_C57_M1_BFA_TS_WLSM_annotated.csv.zst",
           "bytes": 17224025,
           "sha256": "a279574b6832c0bf4d976b2f91e6c33f282b7a9c42a05e897d80da91ae37e92f"
         }
@@ -1199,14 +1199,14 @@
           "relative_difference": -0.000984251968503937
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E03 C57_M2_BFA_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E03_C57_M2_BFA_TS_WLSM_annotated.csv",
       "rows": 131871,
       "csv_sha256": "e55415c425d1294e240f9cdc1544600e7510b738c1a5b3b343e362881eb1ab29",
       "compressed_sha256": "fa900b28e1af26a6b5b42ec1015cdeb7c492dffb0e5359a6046205c01b143c50",
       "compressed_bytes": 10593823,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/E03 C57_M2_BFA_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/E03_C57_M2_BFA_TS_WLSM_annotated.csv.zst",
           "bytes": 10593823,
           "sha256": "fa900b28e1af26a6b5b42ec1015cdeb7c492dffb0e5359a6046205c01b143c50"
         }
@@ -1780,14 +1780,14 @@
           "relative_difference": -0.0028328611898017
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E04 C57_M3_BFA_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E04_C57_M3_BFA_TS_WLSM_annotated.csv",
       "rows": 222278,
       "csv_sha256": "3b3729a03cce1ac413fa8cc8c470293cfca74dbc1c88cb813e16103d3bd308c9",
       "compressed_sha256": "8911c19ae1345370a965556e0edc50df054b357839840d8bf2f34ad6c11e0333",
       "compressed_bytes": 17850135,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/E04 C57_M3_BFA_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/E04_C57_M3_BFA_TS_WLSM_annotated.csv.zst",
           "bytes": 17850135,
           "sha256": "8911c19ae1345370a965556e0edc50df054b357839840d8bf2f34ad6c11e0333"
         }
@@ -2361,14 +2361,14 @@
           "relative_difference": -0.00474934036939314
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E05 C57_M4_BFA_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E05_C57_M4_BFA_TS_WLSM_annotated.csv",
       "rows": 215391,
       "csv_sha256": "794d31a87169f9dbf6c9f4c97cf51e440f2b995b7916390ea7a662dc9dcd6f8c",
       "compressed_sha256": "a67b05c4931e2ea9cef0f3370bb3fd6ff342ddcc800ee018d167949e5f41821f",
       "compressed_bytes": 17301757,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/E05 C57_M4_BFA_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/E05_C57_M4_BFA_TS_WLSM_annotated.csv.zst",
           "bytes": 17301757,
           "sha256": "a67b05c4931e2ea9cef0f3370bb3fd6ff342ddcc800ee018d167949e5f41821f"
         }
@@ -2942,14 +2942,14 @@
           "relative_difference": -0.005714285714285714
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E06 C57_M5_BFA_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/E06_C57_M5_BFA_TS_WLSM_annotated.csv",
       "rows": 220526,
       "csv_sha256": "20c18d708261f32948e2cf6a4dd22504920b210499889cecb8e5ff5ab3c3ff5d",
       "compressed_sha256": "6b56bc61c512302b9e36d2ac3fbec97a7148b9f38b0f2609d9185a1a3fffca81",
       "compressed_bytes": 17715553,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/E06 C57_M5_BFA_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/E06_C57_M5_BFA_TS_WLSM_annotated.csv.zst",
           "bytes": 17715553,
           "sha256": "6b56bc61c512302b9e36d2ac3fbec97a7148b9f38b0f2609d9185a1a3fffca81"
         }
@@ -3523,14 +3523,14 @@
           "relative_difference": -0.006242197253433208
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F02 C57_M1_Stim_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F02_C57_M1_Stim_TS_WLSM_annotated.csv",
       "rows": 142460,
       "csv_sha256": "a619a05aaccc181636d1240a93a50df4788759291543fba3b128d30d272d0603",
       "compressed_sha256": "19d9ab148fc87ab7e78f2edf38186fd9cbf7be10b829219f09e9371861be41a1",
       "compressed_bytes": 11436725,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/F02 C57_M1_Stim_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/F02_C57_M1_Stim_TS_WLSM_annotated.csv.zst",
           "bytes": 11436725,
           "sha256": "19d9ab148fc87ab7e78f2edf38186fd9cbf7be10b829219f09e9371861be41a1"
         }
@@ -4104,14 +4104,14 @@
           "relative_difference": -0.00740990232401482
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F03 C57_M2_Stim_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F03_C57_M2_Stim_TS_WLSM_annotated.csv",
       "rows": 325127,
       "csv_sha256": "2a06f9e15762e8e3201e9b4b87cb68cff8f42bb79add6918fb788eb7c9cf4f25",
       "compressed_sha256": "5b813ff7e6fecd243d23176dee0d55cc7a509d78e576120c144f830307947172",
       "compressed_bytes": 26094567,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/F03 C57_M2_Stim_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/F03_C57_M2_Stim_TS_WLSM_annotated.csv.zst",
           "bytes": 26094567,
           "sha256": "5b813ff7e6fecd243d23176dee0d55cc7a509d78e576120c144f830307947172"
         }
@@ -4685,14 +4685,14 @@
           "relative_difference": -0.004998611496806442
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F04 C57_M3_Stim_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F04_C57_M3_Stim_TS_WLSM_annotated.csv",
       "rows": 343425,
       "csv_sha256": "a727a5b9efca8bcae6922ce3b706950e6277d0f5090c59500f9094b02fc0159a",
       "compressed_sha256": "7c65e5e6bfc2e0251f1b94e44012f73e45137671200733a49690920dcab20720",
       "compressed_bytes": 27545823,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/F04 C57_M3_Stim_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/F04_C57_M3_Stim_TS_WLSM_annotated.csv.zst",
           "bytes": 27545823,
           "sha256": "7c65e5e6bfc2e0251f1b94e44012f73e45137671200733a49690920dcab20720"
         }
@@ -5266,14 +5266,14 @@
           "relative_difference": -0.004689942678478374
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F05 C57_M4_Stim_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F05_C57_M4_Stim_TS_WLSM_annotated.csv",
       "rows": 151910,
       "csv_sha256": "78d839443efc82faca8ca6dd89cb1537734b94e9c2f8499b939077fe6421b7a2",
       "compressed_sha256": "0d382f005c5c5fc6cfb1c9f9797bc0f8365e7800fe507bdb792db44c1d4bd398",
       "compressed_bytes": 12188329,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/F05 C57_M4_Stim_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/F05_C57_M4_Stim_TS_WLSM_annotated.csv.zst",
           "bytes": 12188329,
           "sha256": "0d382f005c5c5fc6cfb1c9f9797bc0f8365e7800fe507bdb792db44c1d4bd398"
         }
@@ -5847,14 +5847,14 @@
           "relative_difference": -0.0036288232244686366
         }
       ],
-      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F06 C57_M5_Stim_TS WLSM_annotated.csv",
+      "prepared_csv": "MurineSplenocytesC57BL6_fcm/F06_C57_M5_Stim_TS_WLSM_annotated.csv",
       "rows": 146089,
       "csv_sha256": "4302353bc21ff95fb54f56e89f3bd6cf0ee8a2c2afb6ba0a6d92a0bfb18dc09d",
       "compressed_sha256": "90972a49e5e9fa429b809a1cd1c26587fc1974f35e77bce22e1a9c8ab169c99b",
       "compressed_bytes": 11720100,
       "source_objects": [
         {
-          "path": "MurineSplenocytesC57BL6_fcm/F06 C57_M5_Stim_TS WLSM_annotated.csv.zst",
+          "path": "MurineSplenocytesC57BL6_fcm/F06_C57_M5_Stim_TS_WLSM_annotated.csv.zst",
           "bytes": 11720100,
           "sha256": "90972a49e5e9fa429b809a1cd1c26587fc1974f35e77bce22e1a9c8ab169c99b"
         }

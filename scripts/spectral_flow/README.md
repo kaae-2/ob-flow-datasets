@@ -58,6 +58,8 @@ output/report directories or a narrower sample selection to continue.
   contiguous `.part0000`, `.part0001`, ... objects. Concatenate parts in numerical
   order to reconstruct the compressed stream. The checksum always describes that
   whole stream. No whole/split ambiguity is permitted.
+- Prepared sample filenames replace spaces with underscores so the existing raw
+  GitHub downloader can fetch them. Original FCS names remain in the audits.
 
 ## Annotation limits
 
