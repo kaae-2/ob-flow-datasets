@@ -1,0 +1,5865 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "FR-FCM-Z7CH-BALBc",
+  "shortname": "MurineSplenocytesBALBc_fcm",
+  "display_name": "Murine splenocytes BALB/c",
+  "flowrepository_accession": "FR-FCM-Z7CH",
+  "source_url": "https://flowrepository.org/id/FR-FCM-Z7CH",
+  "publication_doi": "10.1002/cyto.a.24926",
+  "preparation_script": "scripts/prepare-spectral-flow.py",
+  "versions": {
+    "flowkit": "1.3.0",
+    "flowio": "1.4.0",
+    "flowutils": "1.2.2",
+    "numpy": "2.4.1",
+    "pandas": "2.3.3",
+    "lxml": "6.0.2",
+    "zstandard": "0.23.0"
+  },
+  "sample_count": 10,
+  "biological_replicates": 5,
+  "total_events": 1594429,
+  "markers": [
+    "CD8",
+    "CD3",
+    "TCRgd",
+    "CD62L",
+    "IL-4/5",
+    "CD45R",
+    "NKp46",
+    "IFNg",
+    "CD44",
+    "CD45",
+    "IL-2",
+    "CD19",
+    "TNF",
+    "IL-17A",
+    "CD4"
+  ],
+  "label_counts": {
+    "B-1": 10924,
+    "B-2": 381234,
+    "NK": 27881,
+    "T": 496249,
+    "unlabeled": 678141
+  },
+  "label_policy": "Exactly one selected lineage gate; otherwise unlabeled. Retain all events in original order.",
+  "feature_processing": "native FCS fluorescence values; no additional compensation or display transform",
+  "gating_processing": "original per-sample FlowJo transforms and gates via FlowKit; ellipse approximated as polygon",
+  "reference_event_memberships_verified": false,
+  "annotation_caveat": "Replayed gate counts differ from saved FlowJo counts; per-gate differences follow. No parameters were fitted to force agreement.",
+  "split_constraint": "Keep both treatments from the same strain-qualified mouse together.",
+  "license_status": "unknown/not-recorded",
+  "samples": [
+    {
+      "filename": "E07 BALB_M1_BFA_TS WLSM.fcs",
+      "mouse": "M1",
+      "replicate_id": "BALBc:M1",
+      "treatment": "BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "125",
+      "source_event_count": 195931,
+      "sources": [
+        {
+          "filename": "E07 BALB_M1_BFA_TS WLSM.fcs",
+          "sha256": "8a3f0920f049d92e801ce7418c08e430778202a58fd8215695b3fd4139a4cc03",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667020/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 105180,
+        "label_counts": {
+          "B-1": 1337,
+          "B-2": 34936,
+          "NK": 2631,
+          "T": 51847,
+          "unlabeled": 105180
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 119354,
+          "replayed_count": 118816,
+          "difference": -538,
+          "relative_difference": -0.004507599242589273
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 116241,
+          "replayed_count": 115650,
+          "difference": -591,
+          "relative_difference": -0.0050842645882261854
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95767,
+          "replayed_count": 95662,
+          "difference": -105,
+          "relative_difference": -0.0010964110810613259
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1350,
+          "replayed_count": 1337,
+          "difference": -13,
+          "relative_difference": -0.00962962962962963
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 34966,
+          "replayed_count": 34936,
+          "difference": -30,
+          "relative_difference": -0.000857976319853572
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 56713,
+          "replayed_count": 56655,
+          "difference": -58,
+          "relative_difference": -0.0010226932096697406
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 2636,
+          "replayed_count": 2631,
+          "difference": -5,
+          "relative_difference": -0.0018968133535660092
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 51896,
+          "replayed_count": 51847,
+          "difference": -49,
+          "relative_difference": -0.0009441960844766456
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 20,
+          "replayed_count": 20,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 373,
+          "replayed_count": 372,
+          "difference": -1,
+          "relative_difference": -0.002680965147453083
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 25,
+          "replayed_count": 24,
+          "difference": -1,
+          "relative_difference": -0.04
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 51478,
+          "replayed_count": 51431,
+          "difference": -47,
+          "relative_difference": -0.0009130113835036326
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 38476,
+          "replayed_count": 38429,
+          "difference": -47,
+          "relative_difference": -0.001221540700696538
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 30141,
+          "replayed_count": 30126,
+          "difference": -15,
+          "relative_difference": -0.0004976609933313427
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 8144,
+          "replayed_count": 8084,
+          "difference": -60,
+          "relative_difference": -0.0073673870333988214
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 4,
+          "replayed_count": 4,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 7,
+          "replayed_count": 7,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 12559,
+          "replayed_count": 12561,
+          "difference": 2,
+          "relative_difference": 0.00015924834779839159
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 10320,
+          "replayed_count": 10327,
+          "difference": 7,
+          "relative_difference": 0.0006782945736434108
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 2087,
+          "replayed_count": 2073,
+          "difference": -14,
+          "relative_difference": -0.006708193579300431
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 1,
+          "replayed_count": 1,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 2738,
+          "replayed_count": 2734,
+          "difference": -4,
+          "relative_difference": -0.0014609203798392988
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/E07 BALB_M1_BFA_TS WLSM_annotated.csv",
+      "rows": 195931,
+      "csv_sha256": "4dafdd6dc7639180e0cf0a5fe636b5664ba9823077847c9edfef7791ce74cb78",
+      "compressed_sha256": "0a9655f8e1afdd92086d88e1c7b1f9347eeb41b75a3a19a80b40b4611fee9424",
+      "compressed_bytes": 15732390,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/E07 BALB_M1_BFA_TS WLSM_annotated.csv.zst",
+          "bytes": 15732390,
+          "sha256": "0a9655f8e1afdd92086d88e1c7b1f9347eeb41b75a3a19a80b40b4611fee9424"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "E08 BALB_M2_BFA_TS WLSM.fcs",
+      "mouse": "M2",
+      "replicate_id": "BALBc:M2",
+      "treatment": "BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "126",
+      "source_event_count": 185077,
+      "sources": [
+        {
+          "filename": "E08 BALB_M2_BFA_TS WLSM.fcs",
+          "sha256": "239d9fef239949e46ff21e60a7bd3a58b87db482afd8f3cc82e7a6879807836d",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667021/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 93566,
+        "label_counts": {
+          "B-1": 1184,
+          "B-2": 29991,
+          "NK": 1865,
+          "T": 58471,
+          "unlabeled": 93566
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 116443,
+          "replayed_count": 115978,
+          "difference": -465,
+          "relative_difference": -0.003993370146767088
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 113735,
+          "replayed_count": 113180,
+          "difference": -555,
+          "relative_difference": -0.004879764364531586
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 96032,
+          "replayed_count": 95907,
+          "difference": -125,
+          "relative_difference": -0.0013016494501832722
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1202,
+          "replayed_count": 1184,
+          "difference": -18,
+          "relative_difference": -0.014975041597337771
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 30041,
+          "replayed_count": 29991,
+          "difference": -50,
+          "relative_difference": -0.0016643919976032755
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 62372,
+          "replayed_count": 62319,
+          "difference": -53,
+          "relative_difference": -0.0008497402680690053
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 1873,
+          "replayed_count": 1865,
+          "difference": -8,
+          "relative_difference": -0.004271222637479978
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 58515,
+          "replayed_count": 58471,
+          "difference": -44,
+          "relative_difference": -0.000751943945996753
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 11,
+          "replayed_count": 10,
+          "difference": -1,
+          "relative_difference": -0.09090909090909091
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 312,
+          "replayed_count": 314,
+          "difference": 2,
+          "relative_difference": 0.00641025641025641
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 21,
+          "replayed_count": 21,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 58171,
+          "replayed_count": 58126,
+          "difference": -45,
+          "relative_difference": -0.0007735813377799935
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 44351,
+          "replayed_count": 44324,
+          "difference": -27,
+          "relative_difference": -0.0006087799598656175
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 35955,
+          "replayed_count": 35956,
+          "difference": 1,
+          "relative_difference": 2.781254345709915e-05
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 8176,
+          "replayed_count": 8119,
+          "difference": -57,
+          "relative_difference": -0.006971624266144814
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 1,
+          "replayed_count": 1,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 5,
+          "replayed_count": 5,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 5,
+          "replayed_count": 5,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 13430,
+          "replayed_count": 13412,
+          "difference": -18,
+          "relative_difference": -0.001340282948622487
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 11255,
+          "replayed_count": 11246,
+          "difference": -9,
+          "relative_difference": -0.0007996446023989338
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 2029,
+          "replayed_count": 2013,
+          "difference": -16,
+          "relative_difference": -0.007885657959586003
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 1,
+          "replayed_count": 1,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 2417,
+          "replayed_count": 2413,
+          "difference": -4,
+          "relative_difference": -0.0016549441456350847
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/E08 BALB_M2_BFA_TS WLSM_annotated.csv",
+      "rows": 185077,
+      "csv_sha256": "14054ad0406d700b74d2157c85ded326d48cf89da2d0c8ab558bac9028fea955",
+      "compressed_sha256": "43053a46aa3afb2fb848b86a8979f5511986c2aeab135aec332de12eb156ddf5",
+      "compressed_bytes": 14845421,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/E08 BALB_M2_BFA_TS WLSM_annotated.csv.zst",
+          "bytes": 14845421,
+          "sha256": "43053a46aa3afb2fb848b86a8979f5511986c2aeab135aec332de12eb156ddf5"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "E09 BALB_M3_BFA_TS WLSM.fcs",
+      "mouse": "M3",
+      "replicate_id": "BALBc:M3",
+      "treatment": "BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "135",
+      "source_event_count": 166662,
+      "sources": [
+        {
+          "filename": "E09 BALB_M3_BFA_TS WLSM.fcs",
+          "sha256": "a4411016f109788f1cfdacff7398ad3a87c0659746e4c037f99a84fe8f6894c3",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667022/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 73165,
+        "label_counts": {
+          "B-1": 709,
+          "B-2": 27309,
+          "NK": 3521,
+          "T": 61958,
+          "unlabeled": 73165
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 111302,
+          "replayed_count": 110957,
+          "difference": -345,
+          "relative_difference": -0.0030996747587644425
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 109408,
+          "replayed_count": 109018,
+          "difference": -390,
+          "relative_difference": -0.003564638783269962
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 96724,
+          "replayed_count": 96631,
+          "difference": -93,
+          "relative_difference": -0.0009614986973243456
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 712,
+          "replayed_count": 709,
+          "difference": -3,
+          "relative_difference": -0.004213483146067416
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 27331,
+          "replayed_count": 27309,
+          "difference": -22,
+          "relative_difference": -0.0008049467637481248
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 67199,
+          "replayed_count": 67139,
+          "difference": -60,
+          "relative_difference": -0.0008928704296194883
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 3525,
+          "replayed_count": 3521,
+          "difference": -4,
+          "relative_difference": -0.0011347517730496454
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 62002,
+          "replayed_count": 61958,
+          "difference": -44,
+          "relative_difference": -0.0007096545272733138
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 18,
+          "replayed_count": 18,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 374,
+          "replayed_count": 373,
+          "difference": -1,
+          "relative_difference": -0.00267379679144385
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 30,
+          "replayed_count": 30,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 61580,
+          "replayed_count": 61537,
+          "difference": -43,
+          "relative_difference": -0.0006982786619032154
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 47478,
+          "replayed_count": 47444,
+          "difference": -34,
+          "relative_difference": -0.0007161211508488141
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 40203,
+          "replayed_count": 40186,
+          "difference": -17,
+          "relative_difference": -0.0004228540158694625
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 7067,
+          "replayed_count": 7021,
+          "difference": -46,
+          "relative_difference": -0.006509126927975096
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 5,
+          "replayed_count": 5,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 13651,
+          "replayed_count": 13638,
+          "difference": -13,
+          "relative_difference": -0.0009523111859937001
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 11661,
+          "replayed_count": 11654,
+          "difference": -7,
+          "relative_difference": -0.0006002915701912358
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 1859,
+          "replayed_count": 1846,
+          "difference": -13,
+          "relative_difference": -0.006993006993006993
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 1482,
+          "replayed_count": 1474,
+          "difference": -8,
+          "relative_difference": -0.005398110661268556
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/E09 BALB_M3_BFA_TS WLSM_annotated.csv",
+      "rows": 166662,
+      "csv_sha256": "3ad88930659f9b6547f6e0bc2cc7ad6ae3a23fdadbf51488dbbcbb753828f7e4",
+      "compressed_sha256": "126b8ec46d29af71e636929c75c6e98e3a2e61cfa11da35ac3accca9186f6429",
+      "compressed_bytes": 13352939,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/E09 BALB_M3_BFA_TS WLSM_annotated.csv.zst",
+          "bytes": 13352939,
+          "sha256": "126b8ec46d29af71e636929c75c6e98e3a2e61cfa11da35ac3accca9186f6429"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "E10 BALB_M4_BFA_TS WLSM.fcs",
+      "mouse": "M4",
+      "replicate_id": "BALBc:M4",
+      "treatment": "BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "128",
+      "source_event_count": 190149,
+      "sources": [
+        {
+          "filename": "E10 BALB_M4_BFA_TS WLSM.fcs",
+          "sha256": "e4dd20b9d06dff9ad056a5787fb5406b8ba84a9900fc4bdb23beabea11227b96",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667023/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 98595,
+        "label_counts": {
+          "B-1": 1120,
+          "B-2": 32519,
+          "NK": 2739,
+          "T": 55176,
+          "unlabeled": 98595
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 116889,
+          "replayed_count": 116420,
+          "difference": -469,
+          "relative_difference": -0.004012353600424334
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 114050,
+          "replayed_count": 113541,
+          "difference": -509,
+          "relative_difference": -0.004462954844366506
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95912,
+          "replayed_count": 95818,
+          "difference": -94,
+          "relative_difference": -0.0009800650596380016
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1130,
+          "replayed_count": 1120,
+          "difference": -10,
+          "relative_difference": -0.008849557522123894
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 32558,
+          "replayed_count": 32519,
+          "difference": -39,
+          "relative_difference": -0.0011978622765526138
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 60173,
+          "replayed_count": 60131,
+          "difference": -42,
+          "relative_difference": -0.0006979874694630483
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 2745,
+          "replayed_count": 2739,
+          "difference": -6,
+          "relative_difference": -0.002185792349726776
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 55209,
+          "replayed_count": 55176,
+          "difference": -33,
+          "relative_difference": -0.0005977286312014345
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 14,
+          "replayed_count": 14,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 388,
+          "replayed_count": 386,
+          "difference": -2,
+          "relative_difference": -0.005154639175257732
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 19,
+          "replayed_count": 19,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 54788,
+          "replayed_count": 54757,
+          "difference": -31,
+          "relative_difference": -0.0005658173322625392
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 43211,
+          "replayed_count": 43182,
+          "difference": -29,
+          "relative_difference": -0.0006711254078822522
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 32853,
+          "replayed_count": 32851,
+          "difference": -2,
+          "relative_difference": -6.087724104343591e-05
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 10031,
+          "replayed_count": 9937,
+          "difference": -94,
+          "relative_difference": -0.009370950054830027
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 4,
+          "replayed_count": 4,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 1,
+          "replayed_count": 1,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 11176,
+          "replayed_count": 11174,
+          "difference": -2,
+          "relative_difference": -0.00017895490336435218
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 8977,
+          "replayed_count": 8983,
+          "difference": 6,
+          "relative_difference": 0.0006683747354350006
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 2070,
+          "replayed_count": 2046,
+          "difference": -24,
+          "relative_difference": -0.011594202898550725
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 1,
+          "replayed_count": 1,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 2051,
+          "replayed_count": 2048,
+          "difference": -3,
+          "relative_difference": -0.0014627011214041932
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/E10 BALB_M4_BFA_TS WLSM_annotated.csv",
+      "rows": 190149,
+      "csv_sha256": "63085ac94b576735e552368e05921b7167a10c7ec7efc136b56b0c746f448f4e",
+      "compressed_sha256": "5f6427581a315c6a2f38f97fcbb40ef39a3a1f1babf1b8fb5806e84ead341f7e",
+      "compressed_bytes": 15261071,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/E10 BALB_M4_BFA_TS WLSM_annotated.csv.zst",
+          "bytes": 15261071,
+          "sha256": "5f6427581a315c6a2f38f97fcbb40ef39a3a1f1babf1b8fb5806e84ead341f7e"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "E11 BALB_M5_BFA_TS WLSM.fcs",
+      "mouse": "M5",
+      "replicate_id": "BALBc:M5",
+      "treatment": "BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "129",
+      "source_event_count": 185368,
+      "sources": [
+        {
+          "filename": "E11 BALB_M5_BFA_TS WLSM.fcs",
+          "sha256": "4aa8a543d95ba971b57207c7f311d80f0d62abfe5c58acf93eff9bb818d17a42",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667024/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 92914,
+        "label_counts": {
+          "B-1": 1090,
+          "B-2": 28632,
+          "NK": 2439,
+          "T": 60293,
+          "unlabeled": 92914
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 115712,
+          "replayed_count": 115271,
+          "difference": -441,
+          "relative_difference": -0.00381118639380531
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 112896,
+          "replayed_count": 112418,
+          "difference": -478,
+          "relative_difference": -0.004233985260770975
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95919,
+          "replayed_count": 95811,
+          "difference": -108,
+          "relative_difference": -0.0011259500203296532
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1102,
+          "replayed_count": 1090,
+          "difference": -12,
+          "relative_difference": -0.010889292196007259
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 28666,
+          "replayed_count": 28632,
+          "difference": -34,
+          "relative_difference": -0.0011860740947463894
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 64524,
+          "replayed_count": 64467,
+          "difference": -57,
+          "relative_difference": -0.0008833922261484099
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 2444,
+          "replayed_count": 2439,
+          "difference": -5,
+          "relative_difference": -0.0020458265139116204
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 60347,
+          "replayed_count": 60293,
+          "difference": -54,
+          "relative_difference": -0.0008948249291596931
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 20,
+          "replayed_count": 20,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 299,
+          "replayed_count": 297,
+          "difference": -2,
+          "relative_difference": -0.006688963210702341
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 29,
+          "replayed_count": 28,
+          "difference": -1,
+          "relative_difference": -0.034482758620689655
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 59999,
+          "replayed_count": 59948,
+          "difference": -51,
+          "relative_difference": -0.0008500141669027817
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 46920,
+          "replayed_count": 46878,
+          "difference": -42,
+          "relative_difference": -0.0008951406649616369
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 36504,
+          "replayed_count": 36495,
+          "difference": -9,
+          "relative_difference": -0.0002465483234714004
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 10085,
+          "replayed_count": 10004,
+          "difference": -81,
+          "relative_difference": -0.008031730292513634
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 3,
+          "replayed_count": 3,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 12715,
+          "replayed_count": 12707,
+          "difference": -8,
+          "relative_difference": -0.0006291781360597719
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 10232,
+          "replayed_count": 10231,
+          "difference": -1,
+          "relative_difference": -9.773260359655981e-05
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 2307,
+          "replayed_count": 2292,
+          "difference": -15,
+          "relative_difference": -0.006501950585175552
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 1,
+          "replayed_count": 1,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 0,
+          "replayed_count": 0,
+          "difference": 0,
+          "relative_difference": null
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2,
+          "replayed_count": 2,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 1627,
+          "replayed_count": 1622,
+          "difference": -5,
+          "relative_difference": -0.003073140749846343
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/E11 BALB_M5_BFA_TS WLSM_annotated.csv",
+      "rows": 185368,
+      "csv_sha256": "28dae3007924f9c1a326f744086168b7368fbeebdc61396a29be51529d654a0c",
+      "compressed_sha256": "3fb126576915b3ef699ceaaf7e292abf22555614679a2604f7b7a62f57b1c826",
+      "compressed_bytes": 14867971,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/E11 BALB_M5_BFA_TS WLSM_annotated.csv.zst",
+          "bytes": 14867971,
+          "sha256": "3fb126576915b3ef699ceaaf7e292abf22555614679a2604f7b7a62f57b1c826"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "F07 BALB_M1_Stim_TS WLSM.fcs",
+      "mouse": "M1",
+      "replicate_id": "BALBc:M1",
+      "treatment": "Mitogen+BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "130",
+      "source_event_count": 139973,
+      "sources": [
+        {
+          "filename": "F07 BALB_M1_Stim_TS WLSM.fcs",
+          "sha256": "08e7c1887d1febbb0650c739d5e1083261e0bece807c04de46bbeb39c4a18b31",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667030/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 50265,
+        "label_counts": {
+          "B-1": 1224,
+          "B-2": 48123,
+          "NK": 3369,
+          "T": 36992,
+          "unlabeled": 50265
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 105260,
+          "replayed_count": 105060,
+          "difference": -200,
+          "relative_difference": -0.0019000570017100513
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 102415,
+          "replayed_count": 102251,
+          "difference": -164,
+          "relative_difference": -0.0016013279304789337
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95040,
+          "replayed_count": 94962,
+          "difference": -78,
+          "relative_difference": -0.0008207070707070707
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1222,
+          "replayed_count": 1224,
+          "difference": 2,
+          "relative_difference": 0.0016366612111292963
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 48162,
+          "replayed_count": 48123,
+          "difference": -39,
+          "relative_difference": -0.0008097670362526473
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 43713,
+          "replayed_count": 43675,
+          "difference": -38,
+          "relative_difference": -0.0008693066135932102
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 3379,
+          "replayed_count": 3369,
+          "difference": -10,
+          "relative_difference": -0.002959455460195324
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 37013,
+          "replayed_count": 36992,
+          "difference": -21,
+          "relative_difference": -0.0005673682219760625
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 6,
+          "replayed_count": 6,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 226,
+          "replayed_count": 227,
+          "difference": 1,
+          "relative_difference": 0.004424778761061947
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 11,
+          "replayed_count": 11,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 36770,
+          "replayed_count": 36748,
+          "difference": -22,
+          "relative_difference": -0.0005983138428066358
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 28399,
+          "replayed_count": 28379,
+          "difference": -20,
+          "relative_difference": -0.0007042501496531569
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 22,
+          "replayed_count": 22,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 28209,
+          "replayed_count": 28187,
+          "difference": -22,
+          "relative_difference": -0.0007798929419688752
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 1367,
+          "replayed_count": 1367,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 2561,
+          "replayed_count": 2555,
+          "difference": -6,
+          "relative_difference": -0.0023428348301444747
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 100,
+          "replayed_count": 99,
+          "difference": -1,
+          "relative_difference": -0.01
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 33,
+          "replayed_count": 33,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2909,
+          "replayed_count": 2903,
+          "difference": -6,
+          "relative_difference": -0.002062564455139223
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 7727,
+          "replayed_count": 7713,
+          "difference": -14,
+          "relative_difference": -0.0018118286527759803
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 8,
+          "replayed_count": 8,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 7701,
+          "replayed_count": 7689,
+          "difference": -12,
+          "relative_difference": -0.0015582391897156214
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 764,
+          "replayed_count": 760,
+          "difference": -4,
+          "relative_difference": -0.005235602094240838
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 380,
+          "replayed_count": 380,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 930,
+          "replayed_count": 930,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 1943,
+          "replayed_count": 1940,
+          "difference": -3,
+          "relative_difference": -0.001544004117344313
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/F07 BALB_M1_Stim_TS WLSM_annotated.csv",
+      "rows": 139973,
+      "csv_sha256": "cb68adc8931cb70588b919bb1275e5064d9a80127d0ba9fb4b51caeb503cb06c",
+      "compressed_sha256": "54f50b9445f37e3c38392ab7ae87f8727fb2bc24fffe047e8657388963f0aee9",
+      "compressed_bytes": 11230267,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/F07 BALB_M1_Stim_TS WLSM_annotated.csv.zst",
+          "bytes": 11230267,
+          "sha256": "54f50b9445f37e3c38392ab7ae87f8727fb2bc24fffe047e8657388963f0aee9"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "F08 BALB_M2_Stim_TS WLSM.fcs",
+      "mouse": "M2",
+      "replicate_id": "BALBc:M2",
+      "treatment": "Mitogen+BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "131",
+      "source_event_count": 131330,
+      "sources": [
+        {
+          "filename": "F08 BALB_M2_Stim_TS WLSM.fcs",
+          "sha256": "d85a52f0e1bc8628c8aeb75194d249d67996a49365f658bc09b95d28a4fe8b58",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667031/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 40378,
+        "label_counts": {
+          "B-1": 1117,
+          "B-2": 47580,
+          "NK": 2174,
+          "T": 40081,
+          "unlabeled": 40378
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 105751,
+          "replayed_count": 105589,
+          "difference": -162,
+          "relative_difference": -0.0015319004075611579
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 103330,
+          "replayed_count": 103177,
+          "difference": -153,
+          "relative_difference": -0.0014806929255782445
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95662,
+          "replayed_count": 95591,
+          "difference": -71,
+          "relative_difference": -0.0007421964834521545
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1123,
+          "replayed_count": 1117,
+          "difference": -6,
+          "relative_difference": -0.005342831700801425
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 47605,
+          "replayed_count": 47580,
+          "difference": -25,
+          "relative_difference": -0.000525154920701607
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 45054,
+          "replayed_count": 45014,
+          "difference": -40,
+          "relative_difference": -0.0008878235006880632
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 2181,
+          "replayed_count": 2174,
+          "difference": -7,
+          "relative_difference": -0.0032095369096744614
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 40111,
+          "replayed_count": 40081,
+          "difference": -30,
+          "relative_difference": -0.0007479245094861759
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 6,
+          "replayed_count": 6,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 211,
+          "replayed_count": 211,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 9,
+          "replayed_count": 9,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 39885,
+          "replayed_count": 39855,
+          "difference": -30,
+          "relative_difference": -0.000752162467092892
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 30875,
+          "replayed_count": 30850,
+          "difference": -25,
+          "relative_difference": -0.0008097165991902834
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 37,
+          "replayed_count": 37,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 30689,
+          "replayed_count": 30661,
+          "difference": -28,
+          "relative_difference": -0.0009123790283163348
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 978,
+          "replayed_count": 974,
+          "difference": -4,
+          "relative_difference": -0.00408997955010225
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 2124,
+          "replayed_count": 2120,
+          "difference": -4,
+          "relative_difference": -0.0018832391713747645
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 143,
+          "replayed_count": 141,
+          "difference": -2,
+          "relative_difference": -0.013986013986013986
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 11,
+          "replayed_count": 11,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2527,
+          "replayed_count": 2522,
+          "difference": -5,
+          "relative_difference": -0.0019786307874950534
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 8566,
+          "replayed_count": 8558,
+          "difference": -8,
+          "relative_difference": -0.0009339248190520663
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 5,
+          "replayed_count": 5,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 8548,
+          "replayed_count": 8542,
+          "difference": -6,
+          "relative_difference": -0.0007019185774450163
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 807,
+          "replayed_count": 802,
+          "difference": -5,
+          "relative_difference": -0.006195786864931847
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 425,
+          "replayed_count": 424,
+          "difference": -1,
+          "relative_difference": -0.002352941176470588
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 1057,
+          "replayed_count": 1054,
+          "difference": -3,
+          "relative_difference": -0.002838221381267739
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 1880,
+          "replayed_count": 1880,
+          "difference": 0,
+          "relative_difference": 0.0
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/F08 BALB_M2_Stim_TS WLSM_annotated.csv",
+      "rows": 131330,
+      "csv_sha256": "641a1a476d9c5272d8bfe4bda5eefba8b6b41b9b43867e33121fd82dd0cf0ba1",
+      "compressed_sha256": "ca12930568d37dfe3143fe859c67889a98444dc0f5d158b9bcf8eb021274ffb1",
+      "compressed_bytes": 10529298,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/F08 BALB_M2_Stim_TS WLSM_annotated.csv.zst",
+          "bytes": 10529298,
+          "sha256": "ca12930568d37dfe3143fe859c67889a98444dc0f5d158b9bcf8eb021274ffb1"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "F09 BALB_M3_Stim_TS WLSM.fcs",
+      "mouse": "M3",
+      "replicate_id": "BALBc:M3",
+      "treatment": "Mitogen+BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "136",
+      "source_event_count": 126200,
+      "sources": [
+        {
+          "filename": "F09 BALB_M3_Stim_TS WLSM.fcs",
+          "sha256": "4b4767de2319284bbab5417ced34dfe31b7ffd7f3dd79dfb6d473606e42da480",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667032/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 33181,
+        "label_counts": {
+          "B-1": 850,
+          "B-2": 40230,
+          "NK": 3353,
+          "T": 48586,
+          "unlabeled": 33181
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 104470,
+          "replayed_count": 104325,
+          "difference": -145,
+          "relative_difference": -0.0013879582655307744
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 102432,
+          "replayed_count": 102280,
+          "difference": -152,
+          "relative_difference": -0.0014839112777257108
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 96370,
+          "replayed_count": 96279,
+          "difference": -91,
+          "relative_difference": -0.0009442772647089343
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 851,
+          "replayed_count": 850,
+          "difference": -1,
+          "relative_difference": -0.0011750881316098707
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 40265,
+          "replayed_count": 40230,
+          "difference": -35,
+          "relative_difference": -0.0008692412765429032
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 54256,
+          "replayed_count": 54201,
+          "difference": -55,
+          "relative_difference": -0.0010137127690946623
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 3363,
+          "replayed_count": 3353,
+          "difference": -10,
+          "relative_difference": -0.0029735355337496285
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 48623,
+          "replayed_count": 48586,
+          "difference": -37,
+          "relative_difference": -0.0007609567488637065
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 8,
+          "replayed_count": 8,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 247,
+          "replayed_count": 248,
+          "difference": 1,
+          "relative_difference": 0.004048582995951417
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 17,
+          "replayed_count": 17,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 48351,
+          "replayed_count": 48313,
+          "difference": -38,
+          "relative_difference": -0.0007859196293768484
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 37762,
+          "replayed_count": 37734,
+          "difference": -28,
+          "relative_difference": -0.0007414861500979821
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 30,
+          "replayed_count": 30,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 37564,
+          "replayed_count": 37534,
+          "difference": -30,
+          "relative_difference": -0.0007986369928655096
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 804,
+          "replayed_count": 806,
+          "difference": 2,
+          "relative_difference": 0.0024875621890547263
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 2054,
+          "replayed_count": 2054,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 61,
+          "replayed_count": 59,
+          "difference": -2,
+          "relative_difference": -0.03278688524590164
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 13,
+          "replayed_count": 13,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2432,
+          "replayed_count": 2430,
+          "difference": -2,
+          "relative_difference": -0.0008223684210526315
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 10066,
+          "replayed_count": 10054,
+          "difference": -12,
+          "relative_difference": -0.001192131929266839
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 11,
+          "replayed_count": 11,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 10043,
+          "replayed_count": 10031,
+          "difference": -12,
+          "relative_difference": -0.0011948620930000995
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 700,
+          "replayed_count": 695,
+          "difference": -5,
+          "relative_difference": -0.007142857142857143
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 425,
+          "replayed_count": 416,
+          "difference": -9,
+          "relative_difference": -0.021176470588235293
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 1051,
+          "replayed_count": 1045,
+          "difference": -6,
+          "relative_difference": -0.005708848715509039
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 998,
+          "replayed_count": 998,
+          "difference": 0,
+          "relative_difference": 0.0
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/F09 BALB_M3_Stim_TS WLSM_annotated.csv",
+      "rows": 126200,
+      "csv_sha256": "e11c62218f0be61f4eefc61e5209a35a3bc7d2c1e0ec6bb6fbad45113d73ed81",
+      "compressed_sha256": "6de465e23fb0e285ed55796259a37e404a56dcc18be4d20f4a523769d9d758d3",
+      "compressed_bytes": 10105799,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/F09 BALB_M3_Stim_TS WLSM_annotated.csv.zst",
+          "bytes": 10105799,
+          "sha256": "6de465e23fb0e285ed55796259a37e404a56dcc18be4d20f4a523769d9d758d3"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "F10 BALB_M4_Stim_TS WLSM.fcs",
+      "mouse": "M4",
+      "replicate_id": "BALBc:M4",
+      "treatment": "Mitogen+BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "133",
+      "source_event_count": 137934,
+      "sources": [
+        {
+          "filename": "F10 BALB_M4_Stim_TS WLSM.fcs",
+          "sha256": "3cedb095715e40d2bec038118decb154e5e698ba6549c8d537913e1a1de76da4",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667033/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 47003,
+        "label_counts": {
+          "B-1": 1184,
+          "B-2": 48093,
+          "NK": 3188,
+          "T": 38466,
+          "unlabeled": 47003
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 105993,
+          "replayed_count": 105806,
+          "difference": -187,
+          "relative_difference": -0.0017642674516241638
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 103488,
+          "replayed_count": 103276,
+          "difference": -212,
+          "relative_difference": -0.0020485466914038344
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95521,
+          "replayed_count": 95405,
+          "difference": -116,
+          "relative_difference": -0.0012143926466431465
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1185,
+          "replayed_count": 1184,
+          "difference": -1,
+          "relative_difference": -0.0008438818565400844
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 48145,
+          "replayed_count": 48093,
+          "difference": -52,
+          "relative_difference": -0.001080070620002077
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 44568,
+          "replayed_count": 44510,
+          "difference": -58,
+          "relative_difference": -0.001301382157601867
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 3198,
+          "replayed_count": 3188,
+          "difference": -10,
+          "relative_difference": -0.0031269543464665416
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 38519,
+          "replayed_count": 38466,
+          "difference": -53,
+          "relative_difference": -0.001375944339157299
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 11,
+          "replayed_count": 11,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 224,
+          "replayed_count": 220,
+          "difference": -4,
+          "relative_difference": -0.017857142857142856
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 16,
+          "replayed_count": 16,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 38268,
+          "replayed_count": 38219,
+          "difference": -49,
+          "relative_difference": -0.001280443190132748
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 30673,
+          "replayed_count": 30631,
+          "difference": -42,
+          "relative_difference": -0.0013692824308023342
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 32,
+          "replayed_count": 31,
+          "difference": -1,
+          "relative_difference": -0.03125
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 30493,
+          "replayed_count": 30453,
+          "difference": -40,
+          "relative_difference": -0.0013117764732889516
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 1075,
+          "replayed_count": 1074,
+          "difference": -1,
+          "relative_difference": -0.0009302325581395349
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 2194,
+          "replayed_count": 2191,
+          "difference": -3,
+          "relative_difference": -0.0013673655423883319
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 138,
+          "replayed_count": 137,
+          "difference": -1,
+          "relative_difference": -0.007246376811594203
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 9,
+          "replayed_count": 8,
+          "difference": -1,
+          "relative_difference": -0.1111111111111111
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2492,
+          "replayed_count": 2485,
+          "difference": -7,
+          "relative_difference": -0.0028089887640449437
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 7026,
+          "replayed_count": 7009,
+          "difference": -17,
+          "relative_difference": -0.0024195844007970395
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 10,
+          "replayed_count": 10,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 7002,
+          "replayed_count": 6985,
+          "difference": -17,
+          "relative_difference": -0.00242787774921451
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 613,
+          "replayed_count": 614,
+          "difference": 1,
+          "relative_difference": 0.0016313213703099511
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 323,
+          "replayed_count": 324,
+          "difference": 1,
+          "relative_difference": 0.0030959752321981426
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 749,
+          "replayed_count": 751,
+          "difference": 2,
+          "relative_difference": 0.0026702269692923898
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 1623,
+          "replayed_count": 1618,
+          "difference": -5,
+          "relative_difference": -0.0030807147258163892
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/F10 BALB_M4_Stim_TS WLSM_annotated.csv",
+      "rows": 137934,
+      "csv_sha256": "60ce83570f9486858dd4f0228b642ea37bb0daeeee196e07c7388aa994bab964",
+      "compressed_sha256": "50540933cf5ff045adac889eb2898b732b01d15a292a09d4a335259e0815f44d",
+      "compressed_bytes": 11064645,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/F10 BALB_M4_Stim_TS WLSM_annotated.csv.zst",
+          "bytes": 11064645,
+          "sha256": "50540933cf5ff045adac889eb2898b732b01d15a292a09d4a335259e0815f44d"
+        }
+      ],
+      "representation": "whole"
+    },
+    {
+      "filename": "F11 BALB_M5_Stim_TS WLSM.fcs",
+      "mouse": "M5",
+      "replicate_id": "BALBc:M5",
+      "treatment": "Mitogen+BFA",
+      "workspace": "OMIP-ICS-BALB_c.wsp",
+      "workspace_group": "ICS_ BALB_TS",
+      "workspace_sample_id": "134",
+      "source_event_count": 135805,
+      "sources": [
+        {
+          "filename": "F11 BALB_M5_Stim_TS WLSM.fcs",
+          "sha256": "3421fa0e6d97e6b55f0c5b53e589be3491cc11d8fb951c172d155240501c71f6",
+          "url": "http://flowrepository.org/experiments/7569/fcs_files/667034/download"
+        },
+        {
+          "filename": "OMIP-ICS-BALB_c.wsp",
+          "sha256": "21396b666e6a97ab3159c77d1a12c0daabc6a24545a8154622a5bfcdc3996735",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20394/download"
+        },
+        {
+          "filename": "Supplementary_Note_1.xlsx",
+          "sha256": "b25580ac9c907a0c3605e1cda9eeec18188a1a24b04df3833ab4d16407a09cbd",
+          "url": "http://flowrepository.org/experiments/7569/attachments/20395/download"
+        }
+      ],
+      "annotation_status": "workspace_replay_counts_differ",
+      "target_gates": {
+        "B-1": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-1 Cells"
+        ],
+        "B-2": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "B-2 Cells"
+        ],
+        "NK": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "NKp46+"
+        ],
+        "T": [
+          "root",
+          "Lymphocytes",
+          "Singlets",
+          "Live CD45+",
+          "Other",
+          "T Cells"
+        ]
+      },
+      "channel_mapping": [
+        {
+          "marker": "CD8",
+          "channel": "BUV395-A",
+          "index": 6
+        },
+        {
+          "marker": "CD3",
+          "channel": "BUV496-A",
+          "index": 7
+        },
+        {
+          "marker": "TCRgd",
+          "channel": "BUV563-A",
+          "index": 8
+        },
+        {
+          "marker": "CD62L",
+          "channel": "BUV737-A",
+          "index": 9
+        },
+        {
+          "marker": "IL-4/5",
+          "channel": "BV421-A",
+          "index": 10
+        },
+        {
+          "marker": "CD45R",
+          "channel": "BV605-A",
+          "index": 12
+        },
+        {
+          "marker": "NKp46",
+          "channel": "BV711-A",
+          "index": 13
+        },
+        {
+          "marker": "IFNg",
+          "channel": "AF488-A",
+          "index": 16
+        },
+        {
+          "marker": "CD44",
+          "channel": "[RealBlue 744]-A",
+          "index": 17
+        },
+        {
+          "marker": "CD45",
+          "channel": "[RealBlue 780]-A",
+          "index": 18
+        },
+        {
+          "marker": "IL-2",
+          "channel": "PE-A",
+          "index": 19
+        },
+        {
+          "marker": "CD19",
+          "channel": "PE-CF594-A",
+          "index": 20
+        },
+        {
+          "marker": "TNF",
+          "channel": "PE-Cy7-A",
+          "index": 21
+        },
+        {
+          "marker": "IL-17A",
+          "channel": "R718-A",
+          "index": 23
+        },
+        {
+          "marker": "CD4",
+          "channel": "APC-Cy7-A",
+          "index": 24
+        }
+      ],
+      "label_audit": {
+        "configuration_disagreement": 0,
+        "overlap_in_any_configuration": 0,
+        "unmatched_in_all_configurations": 43894,
+        "label_counts": {
+          "B-1": 1109,
+          "B-2": 43821,
+          "NK": 2602,
+          "T": 44379,
+          "unlabeled": 43894
+        }
+      },
+      "count_comparison": [
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes"
+          ],
+          "saved_count": 106587,
+          "replayed_count": 106382,
+          "difference": -205,
+          "relative_difference": -0.0019233114732565885
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets"
+          ],
+          "saved_count": 104066,
+          "replayed_count": 103846,
+          "difference": -220,
+          "relative_difference": -0.002114043011165991
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+"
+          ],
+          "saved_count": 95608,
+          "replayed_count": 95489,
+          "difference": -119,
+          "relative_difference": -0.0012446657183499289
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-1 Cells"
+          ],
+          "saved_count": 1125,
+          "replayed_count": 1109,
+          "difference": -16,
+          "relative_difference": -0.014222222222222223
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "B-2 Cells"
+          ],
+          "saved_count": 43865,
+          "replayed_count": 43821,
+          "difference": -44,
+          "relative_difference": -0.0010030776245298074
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other"
+          ],
+          "saved_count": 49572,
+          "replayed_count": 49514,
+          "difference": -58,
+          "relative_difference": -0.0011700153312353748
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "NKp46+"
+          ],
+          "saved_count": 2610,
+          "replayed_count": 2602,
+          "difference": -8,
+          "relative_difference": -0.0030651340996168583
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells"
+          ],
+          "saved_count": 44421,
+          "replayed_count": 44379,
+          "difference": -42,
+          "relative_difference": -0.0009454987505909368
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdNKT"
+          ],
+          "saved_count": 7,
+          "replayed_count": 7,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "gdT"
+          ],
+          "saved_count": 221,
+          "replayed_count": 219,
+          "difference": -2,
+          "relative_difference": -0.00904977375565611
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "NKT"
+          ],
+          "saved_count": 11,
+          "replayed_count": 11,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other"
+          ],
+          "saved_count": 44182,
+          "replayed_count": 44142,
+          "difference": -40,
+          "relative_difference": -0.0009053460685346974
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells"
+          ],
+          "saved_count": 35015,
+          "replayed_count": 34979,
+          "difference": -36,
+          "relative_difference": -0.0010281308010852493
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 21,
+          "replayed_count": 21,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 34831,
+          "replayed_count": 34794,
+          "difference": -37,
+          "relative_difference": -0.0010622721139215067
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 890,
+          "replayed_count": 887,
+          "difference": -3,
+          "relative_difference": -0.0033707865168539327
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 2000,
+          "replayed_count": 1993,
+          "difference": -7,
+          "relative_difference": -0.0035
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th2 Cells"
+          ],
+          "saved_count": 115,
+          "replayed_count": 113,
+          "difference": -2,
+          "relative_difference": -0.017391304347826087
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "Th17 Cells"
+          ],
+          "saved_count": 12,
+          "replayed_count": 12,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD4+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 2307,
+          "replayed_count": 2300,
+          "difference": -7,
+          "relative_difference": -0.003034243606415258
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells"
+          ],
+          "saved_count": 8543,
+          "replayed_count": 8537,
+          "difference": -6,
+          "relative_difference": -0.0007023293924850755
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Naive"
+          ],
+          "saved_count": 13,
+          "replayed_count": 13,
+          "difference": 0,
+          "relative_difference": 0.0
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive"
+          ],
+          "saved_count": 8513,
+          "replayed_count": 8508,
+          "difference": -5,
+          "relative_difference": -0.0005873370139786209
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IFNg+"
+          ],
+          "saved_count": 697,
+          "replayed_count": 694,
+          "difference": -3,
+          "relative_difference": -0.00430416068866571
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "IL-2"
+          ],
+          "saved_count": 368,
+          "replayed_count": 372,
+          "difference": 4,
+          "relative_difference": 0.010869565217391304
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Other",
+            "T Cells",
+            "Other",
+            "CD8+ T Cells",
+            "Non-naive",
+            "TNF+"
+          ],
+          "saved_count": 1042,
+          "replayed_count": 1040,
+          "difference": -2,
+          "relative_difference": -0.0019193857965451055
+        },
+        {
+          "gate_path": [
+            "root",
+            "Lymphocytes",
+            "Singlets",
+            "Live CD45+",
+            "Q1: CD19 : PE-CF594 - Area- , CD45R : BV605 - Area+"
+          ],
+          "saved_count": 1046,
+          "replayed_count": 1045,
+          "difference": -1,
+          "relative_difference": -0.0009560229445506692
+        }
+      ],
+      "prepared_csv": "MurineSplenocytesBALBc_fcm/F11 BALB_M5_Stim_TS WLSM_annotated.csv",
+      "rows": 135805,
+      "csv_sha256": "e3cb14db864a405335333558929dad650b3c0a165cf48b5c826e259433bfe700",
+      "compressed_sha256": "55df3b4769944afb1fa653a9395901f0aa357a087a37858e834b8b657e968bbf",
+      "compressed_bytes": 10885665,
+      "source_objects": [
+        {
+          "path": "MurineSplenocytesBALBc_fcm/F11 BALB_M5_Stim_TS WLSM_annotated.csv.zst",
+          "bytes": 10885665,
+          "sha256": "55df3b4769944afb1fa653a9395901f0aa357a087a37858e834b8b657e968bbf"
+        }
+      ],
+      "representation": "whole"
+    }
+  ]
+}
