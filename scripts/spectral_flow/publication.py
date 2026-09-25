@@ -126,6 +126,11 @@ def write_publication_audits(
             "label_counts": dict(sorted(labels.items())),
             "label_policy": "Exactly one selected lineage gate; otherwise unlabeled. Retain all events in original order.",
             "feature_processing": first["feature_processing"],
+            "benchmark_input_scaling": {
+                "reference_cofactor": 150.0,
+                "column_scaling": 1.0,
+                "import_transform": "arcsinh(stored_value / 150)",
+            },
             "gating_processing": first["gating_processing"],
             "reference_event_memberships_verified": False,
             "annotation_caveat": "Replayed gate counts differ from saved FlowJo counts; per-gate differences follow. No parameters were fitted to force agreement.",

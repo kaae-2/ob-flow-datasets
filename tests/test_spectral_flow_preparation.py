@@ -31,6 +31,14 @@ class SpectralPreparationTests(unittest.TestCase):
                 self.assertEqual(audit["total_events"], events)
                 self.assertEqual(audit["sample_count"], 10)
                 self.assertEqual(audit["biological_replicates"], 5)
+                self.assertEqual(
+                    audit["benchmark_input_scaling"],
+                    {
+                        "reference_cofactor": 150.0,
+                        "column_scaling": 1.0,
+                        "import_transform": "arcsinh(stored_value / 150)",
+                    },
+                )
                 self.assertEqual(len(audit["markers"]), 15)
                 self.assertIn(nk_marker, audit["markers"])
                 self.assertEqual(len({s["filename"] for s in audit["samples"]}), 10)

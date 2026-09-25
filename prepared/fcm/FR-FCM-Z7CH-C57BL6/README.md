@@ -18,6 +18,8 @@ The 15 columns are `CD8`, `CD3`, `TCRgd`, `CD62L`, `IL-4/5`, `CD45R`, `NK1.1`,
 `IFNg`, `CD44`, `CD45`, `IL-2`, `CD19`, `TNF`, `IL-17A`, and `CD4`, followed by
 `label`. Native FCS fluorescence values are retained, including negative values;
 no additional compensation, display transform or arcsinh is applied to features.
+These values are already on the benchmark's cofactor-150 input scale, so column
+scaling is 1. The importer applies `arcsinh(stored_value / 150)` exactly once.
 All source events remain in original order.
 
 | Label | Events |
